@@ -1,0 +1,110 @@
+
+.input-for {
+    outline: none;
+    border: none;
+  color: rgba(117, 117, 117, 0.50);
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  width: 400px;
+}
+
+.modal-button{
+    border-radius: 4px;
+      background-color: #2196F3;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      color: white;
+      text-align: center;
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.96px;
+      width: 200px;
+      height: 50px;
+      flex-shrink: 0;
+      border: none;
+      margin-left: 165px;
+      margin-right: 163px;
+  }
+  .modal-box{
+    display: flex;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   gap: 7px;
+    padding-left: 54px;
+    padding-right: 39px;
+  }
+
+  .modal-span{
+    color: #2196F3;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+  }
+
+  
+
+
+.modal {
+    width: 528px;
+    height: 581px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.modal-svg {
+    width: 18px;
+    height: 18px;
+}
+
+.modal-title {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-input {
+     border: none;
+     width: 394px;
+}
+
+.close {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.modal-checkbox:hover {
+    cursor: pointer;
+}
+
+.close-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    margin-left: 490px;
+    margin-top: 8px;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.close-box:hover  .close {
+    fill: #2196F3;
+}
+

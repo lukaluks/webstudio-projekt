@@ -1,0 +1,111 @@
+.info-item::before {
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    content: '';
+    background-image: url(../img/antenna\ 1.png);
+    background-position: center;
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}   
+
+.info-item2::before {
+    background-color: #F5F4FA;
+    content: '';
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image: url(../img/clock\ 1.png);
+    background-position: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.info-item3::before {
+    background-color: #F5F4FA;
+    content: '';
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;;
+    display: block;
+    background-image: url(../img/diagram\ 1.png);
+    margin-bottom: 30px;
+    background-position: center;
+}
+
+
+
+
+.info-item4::before {
+    background-color: #F5F4FA;
+    content: '';
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;;
+    display: block;
+    background-image: url(../img/astronaut\ 1.png);
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.info-list {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+
+.info-text {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.info-text2 {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.info-text3 {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.info-text4 {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.info-description {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:  171.429%;
+    letter-spacing: 0.42px;
+}
+
+.info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
