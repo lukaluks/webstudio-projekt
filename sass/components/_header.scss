@@ -4,11 +4,11 @@ header {
     padding-bottom: 25px;
     padding-top: 24px;
     padding-top: 24px;
-   border: #ECECEC solid 2px;
+   border: $border2 solid 2px;
 }
 
 .header-link {
-    color: var(--bg-color);
+    color: $bg-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -18,7 +18,7 @@ header {
 }
 
 .header-link:focus {
-    color: #2196F3;
+    color: $tex-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -28,7 +28,7 @@ header {
 }
 
 .header-link:hover  {
-     color: #2196F3;
+     color: $tex-color;
 }
 
 .header-box {
@@ -59,11 +59,11 @@ header {
 }
 
 .header-items:hover .email {
-    fill: #2196F3;
+    fill: $tex-color;
 }
 
 .header-items:hover .phone {
-    fill: #2196F3;
+    fill: $tex-color;
 }
 
 .header-item {
@@ -81,7 +81,7 @@ header {
 }
 
 #header-tel {
-    color: #757575;
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -92,7 +92,7 @@ header {
 }
 
 #header-tel:focus {
-    color: #2196F3;
+    color: $tex-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -103,7 +103,7 @@ header {
 }
 
 #header-tel:hover {
-    color: #2196F3;
+    color: $tex-color;
 }
 
 .header-link::after {
@@ -121,14 +121,14 @@ header {
 }
 
 .header-link:hover::after {
-    background: #2196F3;
+    background: $tex-color;
 }
 
 .after::after {
     display: block;
     content: '';
     border-radius: 2px;
-    background: #2196F3;
+    background: $tex-color;
     width: 100%;
     height: 4px;
     position: absolute;
@@ -137,11 +137,11 @@ header {
 }
 
 .color {
-    color: #2196F3;
+    color: $tex-color;
 }
 
 #web {
-    color: #2196F3;
+    color: $tex-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -150,7 +150,7 @@ header {
 }
 
 #studio {
-    color: #212121;
+    color: $black-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;

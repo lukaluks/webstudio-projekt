@@ -62,7 +62,7 @@
     padding-bottom: 10px;
     padding-left: 28px;
     padding-right: 62px;
-    color: #FFF;
+    color: $adress-color;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -71,7 +71,7 @@
     line-height: 30px; 
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: #2196F3;
+    background: $tex-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 200px;
     height: 50px;
@@ -82,7 +82,7 @@
 
 
 .sot-title {
-    color: #FFF;
+    color: $adress-color;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -102,7 +102,7 @@
 }
 
 .tel {
-    color: var(--phone-color);
+    color: $phone-color;
 }
 
 .foot-text {
@@ -110,7 +110,7 @@
 }
 
 .mailto {
-    color: var(--phone-color);
+    color: $phone-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 171.4%;
@@ -119,7 +119,7 @@
 
 
 .adres {
-    color: var(--adress-color);
+    color: $adress-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.714;
@@ -129,7 +129,7 @@
 
 
 #studiow {
-    color: #FFF;
+    color: $adress-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -153,7 +153,7 @@
 }
 
 .employees-svg-item:hover .employees-svg {
-    fill: #FFF;
+    fill: $adress-color;
 }
 
 .employees-svg-item {

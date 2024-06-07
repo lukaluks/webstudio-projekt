@@ -23,7 +23,7 @@
 }
 
 .employees-svg-item:hover .employees-svg {
-    fill: #FFF;
+    fill: $adress-color
 }
 
 .employees-svg-item {
@@ -34,7 +34,7 @@
 }
 
 .employees-description {
-    color: #757575;
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -43,7 +43,7 @@
 }
 
 .employees-text {
-    color: #212121;
+    color: $black-color;
     text-align: center;
 
     font-size: 16px;
@@ -58,7 +58,7 @@
 }
 
 .employees-title {
-    color: #212121;
+    color: $black-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -69,7 +69,7 @@
 }
 
 .employees-item {
-    background-color: #FFF;
+    background-color: $adress-color;
     width: 270px;
     height: 428px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -82,7 +82,7 @@
 
 
 .employees {
-    background: #F5F4FA;
+    background: $bge-color;
 }
 
 

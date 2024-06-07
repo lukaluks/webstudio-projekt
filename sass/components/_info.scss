@@ -1,5 +1,5 @@
 .info-item::before {
-    background-color: #F5F4FA;
+    background-color: $bge-color;
     background-repeat: no-repeat;
     content: '';
     background-image: url(../img/antenna\ 1.png);
@@ -11,7 +11,7 @@
 }   
 
 .info-item2::before {
-    background-color: #F5F4FA;
+    background-color: $bge-color;
     content: '';
     width: 270px;
     height: 120px;
@@ -23,7 +23,7 @@
 }
 
 .info-item3::before {
-    background-color: #F5F4FA;
+    background-color: $bge-color;
     content: '';
     width: 270px;
     height: 120px;
@@ -38,7 +38,7 @@
 
 
 .info-item4::before {
-    background-color: #F5F4FA;
+    background-color: $bge-color;
     content: '';
     width: 270px;
     height: 120px;
@@ -58,7 +58,7 @@
 
 
 .info-text {
-    color: #212121;
+    color: $black-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -68,7 +68,7 @@
 }
 
 .info-text2 {
-    color: #212121;
+    color: $black-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -78,7 +78,7 @@
 }
 
 .info-text3 {
-    color: #212121;
+    color: $black-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -88,7 +88,7 @@
 }
 
 .info-text4 {
-    color: #212121;
+    color: $black-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -98,7 +98,7 @@
 }
 
 .info-description {
-    color: #757575;
+    color: $text-color;
     font-size: 14px;
     font-weight: 400;
     line-height:  171.429%;
