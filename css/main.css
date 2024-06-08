@@ -1,20 +1,4 @@
 @charset "UTF-8";
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* або */
-  /* margin: 0 auto; */
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.box-container {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
-
 h1, h2, ul, li, h3, a, div, p {
   padding: 0;
   margin: 0;
@@ -43,14 +27,20 @@ input {
   outline: none;
 }
 
-:root {
-  --bg-color: blue;
-  --text-color: #757575;
-  --bg-color: #2F303A;
-  --tex-color:#2196F3;
-  --adress-color:#fff;
-  --phone-color: rgba(255, 255, 255, 0.60);
-  --bge-color: #F5F4FA;
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* або */
+  /* margin: 0 auto; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .email {
@@ -159,7 +149,7 @@ header {
 }
 
 .header-link {
-  color: var(--bg-color);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
@@ -318,7 +308,7 @@ header {
 }
 
 .information-title {
-  color: var(--adress-color);
+  color: #fff;
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -339,7 +329,7 @@ header {
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
-  color: var(--adress-color);
+  color: #fff;
   font-size: 16px;
   margin-left: 492px;
   padding-left: 32px;
@@ -356,7 +346,7 @@ header {
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
-  color: var(--adress-color);
+  color: #fff;
   font-size: 16px;
   margin-left: 492px;
   padding-left: 32px;
@@ -377,7 +367,7 @@ header {
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
-  color: var(--adress-color);
+  color: #fff;
   font-size: 16px;
   margin-left: 492px;
   padding-left: 32px;
@@ -394,7 +384,7 @@ header {
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
-  color: var(--adress-color);
+  color: #fff;
   font-size: 16px;
   margin-left: 492px;
   padding-left: 32px;
@@ -462,7 +452,7 @@ button:hover {
 }
 
 .info-text {
-  color: #212121;
+  color: #757575;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -472,7 +462,7 @@ button:hover {
 }
 
 .info-text2 {
-  color: #212121;
+  color: #757575;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -482,7 +472,7 @@ button:hover {
 }
 
 .info-text3 {
-  color: #212121;
+  color: #757575;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -492,7 +482,7 @@ button:hover {
 }
 
 .info-text4 {
-  color: #212121;
+  color: #757575;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -523,7 +513,7 @@ button:hover {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 14px;
@@ -573,7 +563,7 @@ button:hover {
 }
 
 .employees-svg-item:hover .employees-svg {
-  fill: #FFF;
+  fill: #fff;
 }
 
 .employees-svg-item {
@@ -617,7 +607,7 @@ button:hover {
 }
 
 .employees-item {
-  background-color: #FFF;
+  background-color: #fff;
   width: 270px;
   height: 428px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -674,7 +664,7 @@ button:hover {
 }
 
 .foot {
-  background-color: var(--bg-color);
+  background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -737,7 +727,7 @@ button:hover {
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 62px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -756,7 +746,7 @@ button:hover {
 }
 
 .sot-title {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -776,7 +766,7 @@ button:hover {
 }
 
 .tel {
-  color: var(--phone-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .foot-text {
@@ -784,7 +774,7 @@ button:hover {
 }
 
 .mailto {
-  color: var(--phone-color);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 171.4%;
@@ -792,7 +782,7 @@ button:hover {
 }
 
 .adres {
-  color: var(--adress-color);
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
@@ -801,7 +791,7 @@ button:hover {
 }
 
 #studiow {
-  color: #FFF;
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -824,7 +814,7 @@ button:hover {
 }
 
 .employees-svg-item:hover .employees-svg {
-  fill: #FFF;
+  fill: #fff;
 }
 
 .employees-svg-item {
@@ -922,7 +912,7 @@ button:hover {
   border-radius: 4px;
   background-color: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: white;
+  color: #fff;
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -962,7 +952,7 @@ button:hover {
   height: 581px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 

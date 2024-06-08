@@ -2,11 +2,11 @@
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: #757575;
+    fill: $text-color;
 }
 
 .phone {
-    fill: #757575;
+    fill: $text-color;
     width: 16px;
     height: 16px;
     margin-right: 10px;
@@ -16,24 +16,24 @@
 .employees-svg {
     width: 20px;
     height: 20px;
-    fill: #757575;
+    fill: $text-color;
 }
 
 .employes-svg {
     width: 20px;
     height: 20px;
-    fill: #fff;
+    fill: $adress-color;
 }
 
 
 .employes-svg-item:hover {
-    background-color: #2196F3;
+    background-color: $text-colors;
     border-radius: 50%;
 }
 
 
 .employees-svg-item:hover {
-    background-color: #2196F3;
+    background-color: $text-colors;
     border-radius: 50%;
     
 }
@@ -66,7 +66,7 @@
 .customers-svg {
      width: 106px;
      height: 60px;
-     fill: grey;
+     fill: $svg-color;
      margin-top: 16px;
      margin-bottom: 16px;
      margin-left: 32px;
@@ -77,13 +77,13 @@
 }
 
 .customers-svg:hover {
-    fill: #2196F3;
+    fill: $text-colors;
 }
 
 
 .but {
     width: 24px;
     height: 24px;
-    fill: #fff;
+    fill: $adress-color;
     margin-top: 13px;
 }

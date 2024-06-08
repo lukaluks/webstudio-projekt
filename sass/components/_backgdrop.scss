@@ -45,14 +45,14 @@
 }
 
 .box:hover {
-    fill: $tex-color;
-    border:1px solid $tex-color;
+    fill: $text-colors;
+    border:1px solid $text-colors;
 }
 
 
 
 .box-big:hover {
-    border:1px solid $tex-color;
+    border:1px solid $text-colors;
 }
 
 .beckgdrop.is-hidden {

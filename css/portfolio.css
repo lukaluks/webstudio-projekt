@@ -1,4 +1,48 @@
 @charset "UTF-8";
+h1, h2, ul, li, h3, a, div, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* або */
+  /* margin: 0 auto; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
 header {
   padding-bottom: 25px;
   padding-top: 24px;
@@ -7,7 +51,7 @@ header {
 }
 
 .header-link {
-  color: var(--bg-color);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
@@ -156,60 +200,6 @@ header {
   letter-spacing: 0.78px;
 }
 
-:root {
-  --bg-color: blue;
-  --text-color: #757575;
-  --bg-color: #2F303A;
-  --tex-color:#2196F3;
-  --adress-color:#fff;
-  --phone-color: rgba(255, 255, 255, 0.60);
-  --bge-color: #F5F4FA;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* або */
-  /* margin: 0 auto; */
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.box-container {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
-
-h1, h2, ul, li, h3, a, div, p {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-li {
-  list-style: none;
-}
-
-button {
-  border: none;
-}
-
-input {
-  outline: none;
-}
-
 .email {
   width: 16px;
   height: 12px;
@@ -317,7 +307,7 @@ input {
 }
 
 .naviganion-button:focus {
-  color: var(--adress-color);
+  color: #fff;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -336,7 +326,7 @@ input {
 
 .naviganion-button:hover {
   background-color: #2196F3;
-  color: var(--adress-color);
+  color: #fff;
 }
 
 .navigation-list {
@@ -353,7 +343,7 @@ input {
 }
 
 .text-one {
-  color: var(--tex-color);
+  color: #2196F3;
   font-size: 16px;
 }
 
@@ -371,7 +361,7 @@ input {
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -383,7 +373,7 @@ input {
 }
 
 .email-title {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -393,11 +383,11 @@ input {
 }
 
 .tel {
-  color: var(--phone-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .navigation-text {
-  background-color: var(--bge-color);
+  background-color: #F5F4FA;
   font-size: 16px;
 }
 
@@ -409,7 +399,7 @@ input {
     background-position: top;
 } */
 .presentation-overlay {
-  background: rgba(33, 150, 243, 0.9);
+  background: #2196F3 33, 150, 243, 0.9;
   width: 370px;
   height: 294px;
   position: absolute;
@@ -429,7 +419,7 @@ input {
 }
 
 .overlay-text {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -481,7 +471,7 @@ input {
 
 .presentation-item:hover {
   border: 1px solid #EEE;
-  background: #FFF;
+  background: #fff;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 } 
@@ -607,7 +597,7 @@ input {
 }
 
 .foot {
-  background-color: var(--bg-color);
+  background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -670,7 +660,7 @@ input {
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 62px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -689,7 +679,7 @@ input {
 }
 
 .sot-title {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -709,7 +699,7 @@ input {
 }
 
 .tel {
-  color: var(--phone-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .foot-text {
@@ -717,7 +707,7 @@ input {
 }
 
 .mailto {
-  color: var(--phone-color);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 171.4%;
@@ -725,7 +715,7 @@ input {
 }
 
 .adres {
-  color: var(--adress-color);
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
@@ -734,7 +724,7 @@ input {
 }
 
 #studiow {
-  color: #FFF;
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -757,7 +747,7 @@ input {
 }
 
 .employees-svg-item:hover .employees-svg {
-  fill: #FFF;
+  fill: #fff;
 }
 
 .employees-svg-item {

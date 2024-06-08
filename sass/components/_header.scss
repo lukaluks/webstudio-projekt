@@ -8,7 +8,7 @@ header {
 }
 
 .header-link {
-    color: $bg-color;
+    color: $texts-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -18,7 +18,7 @@ header {
 }
 
 .header-link:focus {
-    color: $tex-color;
+    color: $text-colors;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -28,7 +28,7 @@ header {
 }
 
 .header-link:hover  {
-     color: $tex-color;
+     color: $text-colors;
 }
 
 .header-box {
@@ -59,11 +59,11 @@ header {
 }
 
 .header-items:hover .email {
-    fill: $tex-color;
+    fill: $text-colors;
 }
 
 .header-items:hover .phone {
-    fill: $tex-color;
+    fill: $text-colors;
 }
 
 .header-item {
@@ -92,7 +92,7 @@ header {
 }
 
 #header-tel:focus {
-    color: $tex-color;
+    color: $text-colors;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -103,7 +103,7 @@ header {
 }
 
 #header-tel:hover {
-    color: $tex-color;
+    color: $text-colors;
 }
 
 .header-link::after {
@@ -121,14 +121,14 @@ header {
 }
 
 .header-link:hover::after {
-    background: $tex-color;
+    background: $text-colors;
 }
 
 .after::after {
     display: block;
     content: '';
     border-radius: 2px;
-    background: $tex-color;
+    background: $text-colors;
     width: 100%;
     height: 4px;
     position: absolute;
@@ -137,11 +137,11 @@ header {
 }
 
 .color {
-    color: $tex-color;
+    color: $text-colors;
 }
 
 #web {
-    color: $tex-color;
+    color: $text-colors;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -150,7 +150,7 @@ header {
 }
 
 #studio {
-    color: $black-color;
+    color: $texts-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
