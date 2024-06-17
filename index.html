@@ -20,35 +20,34 @@
   </head>
   <body>
     <!-- header -->
-
-    <header>
-      <div class="container header-box" >
+    <header class="header">
+      <div class="container header__box" >
         <a href="./index.html"
-          class="header-links"><span id="web">Web</span><span id="studio">Studio</span></a
+          class="header__links"><span class="header__span1">Web</span><span class="header__span2">Studio</span></a
         >
-        <ul class="header-list">
-          <li class="header-item">
-            <a href="./index.html" class="header-link after color">Студія</a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./index.html" class="header__link header__after header__color">Студія</a>
           </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="header-link">Портфоліо</a>
+          <li class="header__item">
+            <a href="./portfolio.html" class="header__link">Портфоліо</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">Контакти</a>
+          <li class="header__item">
+            <a href="" class="header__link">Контакти</a>
           </li>
         </ul>
-        <ul class="header-lists">
-          <li class="header-items">
-            <svg class="email">
+        <ul class="header__lists">
+          <li class="header__items">
+            <svg class="header__email">
               <use href="./img/symboldefts.svg/icon.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" id="header-tel">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="header__tel">info@devstudio.com</a>
           </li>
           <li class="header-items">
-            <svg class="phone">
+            <svg class="header__phone">
               <use href="./img/symboldefts.svg/icon.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+380961111111"  id="header-tel">+38 096 111 11 11</a>
+            <a href="tel:+380961111111"  class="header__tel">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -58,8 +57,8 @@
 
     <section class="information">
       <div class="container">
-        <h1 class="information-title animate__heartBeat">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="button" data-modal-open>Замовити послугу</button>
+        <h1 class="information__title animate__heartBeat">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button type="button" class="information__button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -67,42 +66,30 @@
 
     <section class="info">
       <div class="container">
-        <ul class="info-list">
-          <li class="info-item" data-aos="flip-left">
-            <div class="info-box">
-
-            </div >
-            <h2 class="info-text">Увага до деталей</h2>
-            <p class="info-description">
+        <ul class="info__list">
+          <li class="info__item" data-aos="flip-left">
+            <h2 class="info__text">Увага до деталей</h2>
+            <p class="info__description">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <div class="info-box">
-
-          </div>
-          <li class="info-item2" data-aos="flip-left">
-            <h2 class="info-text2">Пунктуальність</h2>
-            <p class="info-description">
+          <li class="info__item2" data-aos="flip-left">
+            <h2 class="info__text2">Пунктуальність</h2>
+            <p class="info__description">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <div class="info-box">
-
-          </div>
-          <li class="info-item3" data-aos="flip-left">
-            <h2 class="info-text3">Планування</h2>
-            <p class="info-description">
+          <li class="info__item3" data-aos="flip-left">
+            <h2 class="info__text3">Планування</h2>
+            <p class="info__description">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <div class="info-box">
-
-          </div>
-          <li class="info-item4" data-aos="flip-left">
-            <h2 class="info-text4">Сучасні технології</h2>
-            <p class="info-description">
+          <li class="info__item4" data-aos="flip-left">
+            <h2 class="info__text4">Сучасні технології</h2>
+            <p class="info__description">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -113,22 +100,22 @@
 
     <!-- labor -->
 
-    <section class="lador">
+    <section class="labor">
       <div class="container">
-        <h2 class="labor-title">Чим ми займаємося</h2>
-        <ul class="labor-list">
-          <li class="labor-item" data-aos="flip-left">
+        <h2 class="labor__title">Чим ми займаємося</h2>
+        <ul class="labor__list">
+          <li class="labor__item" data-aos="flip-left">
             
-            <img src="./img/services2.jpg" class="labor-img" alt="img1" />
-                <button class="lador-btn">ДЕСКТОПНІ ДОДАТКИ</button>
+            <img src="./img/services2.jpg" class="labor__img" alt="img1" />
+                <button class="labor__btn">ДЕСКТОПНІ ДОДАТКИ</button>
           </li>
           <li class="labor-item" data-aos="flip-left">
-            <img src="./img/services1.jpg" class="labor-img" alt="imgsection" />
-            <button class="lador-btn">МОБІЛЬНІ ДОДАТКИ</button>
+            <img src="./img/services1.jpg" class="labor__img" alt="imgsection" />
+            <button class="labor__btn">МОБІЛЬНІ ДОДАТКИ</button>
           </li>
           <li class="labor-item" data-aos="flip-left">
-            <img src="./img/services3.jpg" class="labor-img" alt="img3" />
-            <button class="lador-btn">ДИЗАЙНЕРСЬКІ РІШЕННЯ</button>
+            <img src="./img/services3.jpg" class="labor__img" alt="img3" />
+            <button class="labor__btn">ДИЗАЙНЕРСЬКІ РІШЕННЯ</button>
           </li>
         </ul>
       </div>
@@ -138,115 +125,115 @@
 
     <section class="employees">
       <div class="container">
-        <h2 class="employees-title">Наша команда</h2>
-        <ul class="employees-list">
-          <li class="employees-item" data-aos="zoom-in-up">
-            <img  src="./img/employees.jpg" class="employees-img" alt="employees"/>
-            <h3 class="employees-text">Ігор Дем'яненко</h3>
-            <p class="employees-description">Product Designer</p>
-            <ul class="employees-svg-list">
-              <li class="employees-svg-item">
-            <svg class="employees-svg">
+        <h2 class="employees__title">Наша команда</h2>
+        <ul class="employees__list">
+          <li class="employees__item" data-aos="zoom-in-up">
+            <img  src="./img/employees.jpg" class="employees__img" alt="employees"/>
+            <h3 class="employees__text">Ігор Дем'яненко</h3>
+            <p class="employees__description">Product Designer</p>
+            <ul class="employees__svg-list">
+              <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-instagram"></use>
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-twitter">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-facebook">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-linkedin">
             </svg>
           </li>
           </ul>
           </li>
-          <li class="employees-item" data-aos="zoom-in-up">
+          <li class="employees__item" data-aos="zoom-in-up">
             <img src="./img/employees3.jpg" class="employees-img" alt="employees3"/>
-            <h3 class="employees-text">Ольга Рєпіна</h3>
-            <p class="employees-description">Frontend Developer</p>
-            <ul class="employees-svg-list">
-              <li class="employees-svg-item">
-            <svg class="employees-svg">
+            <h3 class="employees__text">Ольга Рєпіна</h3>
+            <p class="employees__description">Frontend Developer</p>
+            <ul class="employees__svg-list">
+              <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-instagram"></use>
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-twitter">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-facebook">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-linkedin">
             </svg>
           </li>
           </ul>
           </li>
-          <li class="employees-item" data-aos="zoom-in-up">
+          <li class="employees__item" data-aos="zoom-in-up">
             <img
               src="./img/employees2.jpg"
               class="employees-img"
               alt="employees2"
             />
-            <h3 class="employees-text" >Микола Тарасов</h3>
-            <p class="employees-description">Marketing</p>
-            <ul class="employees-svg-list">
-              <li class="employees-svg-item">
-            <svg class="employees-svg">
+            <h3 class="employees__text" >Микола Тарасов</h3>
+            <p class="employees__description">Marketing</p>
+            <ul class="employees__svg-list">
+              <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-instagram"></use>
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-twitter">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-facebook">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-linkedin">
             </svg>
           </li>
           </ul>
           </li>
-          <li class="employees-item" data-aos="zoom-in-up">
+          <li class="employees__item" data-aos="zoom-in-up">
             <img src="./img/imemployees4.jpg" class="employees-img" alt="employees4"/>
-            <h3 class="employees-text">Михайло Єрмаков</h3>
-            <p class="employees-description">UI Designer</p>
-            <ul class="employees-svg-list">
-              <li class="employees-svg-item">
-            <svg class="employees-svg">
+            <h3 class="employees__text">Михайло Єрмаков</h3>
+            <p class="employees__description">UI Designer</p>
+            <ul class="employees__svg-list">
+              <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-instagram"></use>
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-twitter">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-facebook">
             </svg>
           </li>
-          <li class="employees-svg-item">
-            <svg class="employees-svg">
+          <li class="employees__svg-item">
+            <svg class="employees__svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-linkedin">
             </svg>
           </li>
@@ -257,44 +244,44 @@
     </section>
     <section class="customers">
       <div class="container">
-      <h2 class="customers-title" data-aos="fade-right"
+      <h2 class="customers__title" data-aos="fade-right"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine">Постійні клієнти</h2>
-      <ul class="customers-list">
+      <ul class="customers__list">
         
-        <li class="customers-item" data-aos="fade-up"
+        <li class="customers__item" data-aos="fade-up"
         data-aos-duration="3000">
-        <svg class="customers-svg">
+        <svg class="customers__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-logo"></use>
         </svg>
       </li>
-        <li class="customers-item" data-aos="fade-up"
+        <li class="customers__item" data-aos="fade-up"
         data-aos-duration="3000">
-        <svg class="customers-svg">
+        <svg class="customers__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-company"></use>
         </svg>
       </li>
-        <li class="customers-item" data-aos="fade-up"
+        <li class="customers__item" data-aos="fade-up"
         data-aos-duration="3000">
-        <svg class="customers-svg">
+        <svg class="customers__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-company2"></use>
         </svg>
       </li>
-        <li class="customers-item" data-aos="fade-up"
+        <li class="customers__item" data-aos="fade-up"
         data-aos-duration="3000">
-        <svg class="customers-svg">
+        <svg class="customers__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-logo-faster"></use>
         </svg>
       </li>
-        <li class="customers-item" data-aos="fade-up"
+        <li class="customers__item" data-aos="fade-up"
         data-aos-duration="3000">
-        <svg class="customers-svg">
+        <svg class="customers__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-brand"></use>
         </svg>
       </li>
-      <li class="customers-item" data-aos="fade-up"
+      <li class="customers__item" data-aos="fade-up"
       data-aos-duration="3000">
-      <svg class="customers-svg">
+      <svg class="customers__svg">
         <use href="./img/symboldefts.svg/icon.svg#icon-company3"></use>
       </svg>
     </li>
@@ -303,49 +290,49 @@
     </section>
     <footer class="foot">
       <div class="container  box-container">
-        <div class="flex">
-        <div class="flex-footer">
-        <h2 class="foot-text">
-          <span id="web">Web</span><span id="studiow">Studio</span>
+        <div class="foot__flex">
+        <div class="flex__footer">
+        <h2 class="foot__text">
+          <span class="foot__span1">Web</span><span class="foot__span2">Studio</span>
         </h2>
-        <div class="foot-email-tel">
-        <address class="adres">м. Київ, пр-т Лесі Українки, 26</address>
+        <div class="foot__email-tel">
+        <address class="foot__adres">м. Київ, пр-т Лесі Українки, 26</address>
 
-        <a href="mailto:info@devstudio.com" class="mailto">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="foot__mailto">info@devstudio.com</a>
+        <a href="tel:+380961111111" class="foot__tel">+38 096 111 11 11</a>
       </div>
       </div>
-    <div class="flex-footer2"> 
-        <h2 class="sot-title">ПРИЄДНУЙТЕСЬ</h2>
-        <ul class="employes-svg-list">
-          <li class="employes-svg-item">
-        <svg class="employes-svg">
+    <div class="footer__flex-footer2"> 
+        <h2 class="foot__sot-title">ПРИЄДНУЙТЕСЬ</h2>
+        <ul class="foot__svg-list">
+          <li class="foot__svg-item">
+        <svg class="foot__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-instagram"></use>
         </svg>
       </li>
-      <li class="employes-svg-item">
-        <svg class="employes-svg">
+      <li class="foot__svg-item">
+        <svg class="foot__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-twitter"></svg>
         </svg>
       </li>
-      <li class="employes-svg-item">
-        <svg class="employes-svg">
+      <li class="foot__svg-item">
+        <svg class="foot__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-facebook"></svg>
         </svg>
       </li>
-      <li class="employes-svg-item">
-        <svg class="employes-svg">
+      <li class="foot__svg-item">
+        <svg class="foot__svg">
           <use href="./img/symboldefts.svg/icon.svg#icon-linkedin"></svg>
         </svg>
       </li>
       </ul>
   </div>
-  <div class="flex-footer3">
-    <h2 class="flex-footer3-title">Підишіться на розсилку</h2>
+  <div class="flex__footer3">
+    <h2 class="foot__flex-title">Підишіться на розсилку</h2>
     <form action="">
-    <input type="email" placeholder="E-mail" class="flex-footer3-input">
-    <button type="button" class="flexfooter3-button">Підписатися
-      <svg class="telega" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <input type="email" placeholder="E-mail" class="foot__flex-input">
+    <button type="button" class="foot__flex-button">Підписатися
+      <svg class="foot__telega" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
         </svg>
       </button>
@@ -355,57 +342,57 @@
 </div>
     </footer>
     <div class="beckgdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="close-box" data-modal-close>
-        <svg class="close">
+      <div class="beckgdrop__modal">
+        <div class="beckgdrop__close-box" data-modal-close>
+        <svg class="beckgdrop__close">
           <use href="./img/symboldefts.svg/icon.svg#icon-close"></use>
         </svg>
       </div>
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="beckgdrop__modal-title">Залиште свої дані, ми вам передзвонимо</h2>
        
         <form action="">
-          <ul class="form-list">
-            <li class="form-item">
-          <p class="fotm-title">Ім'я</p>
-          <div class="box">
-            <svg class="modal-svg">
+          <ul class="beckgdrop__form-list">
+            <li class="beckgdrop__form-item">
+          <p class="beckgdrop__fotm-title">Ім'я</p>
+          <div class="beckgdrop__box">
+            <svg class="beckgdrop__modal-svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-person"></use>
             </svg>
-          <input type="text" class="form-input">
+          <input type="text" class="beckgdrop__form-input">
           
         </div>
         </li>
-        <li class="form-item">
-          <p class="fotm-title">Телефон</p>
-          <div class="box">
-            <svg class="modal-svg">
+        <li class="beckgdrop__form-item">
+          <p class="beckgdrop__fotm-title">Телефон</p>
+          <div class="beckgdrop__box">
+            <svg class="beckgdrop__modal-svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-phone"></use>
             </svg>
-          <input type="tel" class="form-input">
+          <input type="tel" class="beckgdrop__form-input">
           
         </div>
         </li>
-        <li class="form-item">
-          <p class="fotm-title">Пошта</p>
-          <div class="box">
-            <svg class="modal-svg">
+        <li class="beckgdrop__form-item">
+          <p class="beckgdrop__fotm-title">Пошта</p>
+          <div class="beckgdrop__box">
+            <svg class="beckgdrop__modal-svg">
               <use href="./img/symboldefts.svg/icon.svg#icon-email"></use>
             </svg>
-          <input type="email" class="form-input">
+          <input type="email" class="beckgdrop__form-input">
         </div>
         </li>
-        <li class="form-item">
-          <p class="fotm-title">Коментар</p>
-          <div class="box-big">
-          <input type="text" class="input-for" placeholder="Введіть текст">
+        <li class="beckgdrop__form-item">
+          <p class="beckgdrop__fotm-title">Коментар</p>
+          <div class="beckgdrop__box-big">
+          <input type="text" class="beckgdrop__input-for" placeholder="Введіть текст">
         </div>
         </li>
         </ul>
-        <div class="modal-box">
-          <input class="modal-checkbox" type="checkbox">
-          <p class="modal-description">Погоджуюся з розсилкою та приймаю  <span class="modal-span">Умови договору</span></p>
+        <div class="beckgdrop__modal-box">
+          <input class="beckgdrop__modal-checkbox" type="checkbox">
+          <p class="beckgdrop__modal-description">Погоджуюся з розсилкою та приймаю  <span class="beckgdrop__modal-span">Умови договору</span></p>
         </div>
-        <button class="modal-button" type="submit">Відправити</button>
+        <button class="beckgdrop__modal-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

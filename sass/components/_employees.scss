@@ -1,63 +1,9 @@
 .employees {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: $bakround-color;
 
-
-
-
-
-.employees-svg-list {
-    display: flex;
-    gap: 10px;
-    margin-left: 32px;
-    padding-top: 28px;
-    margin-right: 32px;
-    
-}
-
-.employes-svg-list {
-    display: flex;
-    gap: 10px;
-    padding-top: 20px;
-}
-
-.employees-svg-item:hover .employees-svg {
-    fill: $adress-color
-}
-
-.employees-svg-item {
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.employees-description {
-    color: $text-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 118.75%;
-    letter-spacing: 0.48px;
-}
-
-.employees-text {
-    color: $texts-color;
-    text-align: center;
-
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-    padding-top: 30px;
-}
-
-.employees-description {
-    padding-top: 10px;
-}
-
-.employees-title {
+  &__title {
     color: $texts-color;
     text-align: center;
     font-size: 36px;
@@ -65,29 +11,121 @@
     line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-    
-}
+  }
 
-.employees-item {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
     background-color: $adress-color;
     width: 270px;
     height: 428px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
-}
+  }
 
-.employees-img {
+  
+   &__img {
     width: 270px;
-}
+  }
 
+  &__text {
+    color: $texts-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    padding-top: 30px;
+  }
 
-.employees {
-    background: $bakround-color;
-}
+  &__description {
+    color: $text-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 118.75%;
+    letter-spacing: 0.48px;
+    padding-top: 10px;
+  }
 
-
-.employees-list {
+  &__svg-list{
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    margin-left: 32px;
+    padding-top: 28px;
+    margin-right: 32px;
+    padding-top: 20px;
+  }
+
+  &__svg-item {
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__svg-item:hover &__svg {
+    fill: $adress-color;
+  }
+
+
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: $text-color;
+}
+
+
+
+&__svg-item:hover {
+    background-color: $text-colors;
+    border-radius: 50%;
+}
+
+
+&__svg-item:hover {
+    background-color: $text-colors;
+    border-radius: 50%;
     
 }
+
+&__svg-item {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+&__svg-item {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+  
+}
+
+
+
+
+
+
+

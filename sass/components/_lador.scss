@@ -1,42 +1,50 @@
-.lador {
+.labor {
     padding-bottom: 94px;
     padding-top: 0px;
+
+    &__title {
+        color: $texts-color;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        
+    }
+
+    &__btn {
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.80);
+        color: $adress-color;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    
+
+    
+   &__item {
+    position: relative;
 }
 
-.lador-btn {
-    width: 370px;
-    height: 70px;
-    background: rgba(47, 48, 58, 0.80);
-    color: $adress-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}
-
-.labor-title {
-    color: $texts-color;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
-
-.labor-list {
-    display: flex;
-    gap: 30px;
     
 }
 
-.labor-item {
-    position: relative;
-}
+
+
 
 
 

@@ -1,43 +1,90 @@
-.info-item::before {
-    background-color:  $bakround-color;
-    background-repeat: no-repeat;
-    content: '';
-    background-image: url(../img/antenna\ 1.png);
-    background-position: center;
-    display: block;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-}   
+.info {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-.info-item2::before {
-    background-color:  $bakround-color;
-    content: '';
-    width: 270px;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-image: url(../img/clock\ 1.png);
-    background-position: center;
-    display: block;
-    margin-bottom: 30px;
-}
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
 
-.info-item3::before {
-    background-color:  $bakround-color;
-    content: '';
-    width: 270px;
-    height: 120px;
-    background-repeat: no-repeat;;
-    display: block;
-    background-image: url(../img/diagram\ 1.png);
-    margin-bottom: 30px;
-    background-position: center;
-}
+    &__item::before {
+        background-color:  $bakround-color;
+        background-repeat: no-repeat;
+        content: '';
+        background-image: url(../img/antenna\ 1.png);
+        background-position: center;
+        display: block;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }  
 
+    &__text {
+        color: $texts-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
 
+    &__description {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height:  171.429%;
+        letter-spacing: 0.42px;
+    }
 
+    &__item2::before {
+        background-color:  $bakround-color;
+        content: '';
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-image: url(../img/clock\ 1.png);
+        background-position: center;
+        display: block;
+        margin-bottom: 30px;
+    }
 
-.info-item4::before {
+    &__text2 {
+        color: $texts-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__item3::before {
+        background-color:  $bakround-color;
+        content: '';
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;;
+        display: block;
+        background-image: url(../img/diagram\ 1.png);
+        margin-bottom: 30px;
+        background-position: center;
+    }
+
+    &__text3 {
+        color: $texts-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    
+
+&__item4::before {
     background-color:  $bakround-color;
     content: '';
     width: 270px;
@@ -49,16 +96,8 @@
     margin-bottom: 30px;
 }
 
-.info-list {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-
-
-.info-text {
-    color: $text-color;
+&__text4 {
+    color: $texts-color;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -67,45 +106,29 @@
     margin-bottom: 12px;
 }
 
-.info-text2 {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+    
+    
+    
+    
+    
 }
 
-.info-text3 {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
 
-.info-text4 {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
 
-.info-description {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height:  171.429%;
-    letter-spacing: 0.42px;
-}
 
-.info {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

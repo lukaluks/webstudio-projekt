@@ -2,29 +2,95 @@
     background-color:  $background-color;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &__flex{
+        display: flex;
+    }
+
+    &__flex-footer {
+        margin-right: 70px;
+        height: 100px;
+    }
+
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: $text-color;
+    }
+
+    &__svg-list{
+        display: flex;
+        gap: 10px;
+        margin-left: 32px;
+        padding-top: 28px;
+        margin-right: 32px;
+        padding-top: 20px;
+      }
+
+      &__span1 {
+        color: $text-colors;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+      }
+    
+      &__span2 {
+        color: $adress-color;
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+      }
+
+      &__email-tel {
+        display: flex;
+        flex-direction:column;
+    }
+
+    &__adres {
+        color: $adress-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.714;
+        font-style: normal;
+        margin-bottom: 9px;
+    }
+
+    &__tel {
+        color: $phone-color;
+    }
+
+    &__mailto {
+        color: $phone-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 171.4%;
+        margin-bottom: 9px;
+    }
+
+    
+  &__sot-title {
+    color: $adress-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    padding-left: 69px;
 }
 
-.input-foot {
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid $border3;
-    background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding-left: 16px;
+    &__svg-item {
+        border-radius: 50%;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.telega {
-    position: absolute;
-    top: 13px;
-    left: 148px;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-footer3-title {
+ &__flex-title {
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
@@ -35,7 +101,9 @@
     padding-left: 95px;
 }
 
-.flex-footer3-input {
+
+
+&__flex-input {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -57,7 +125,72 @@
     margin-top: 20px;
 }
 
-.flexfooter3-button {
+&__svg-list {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+&__svg-list {
+    display: flex;
+    gap: 10px;
+    margin-left: 32px;
+    padding-top: 28px;
+    margin-right: 32px;
+    
+}
+    
+&__svg-item:hover &__svg {
+    fill: $adress-color;
+}
+
+&__svg {
+    width: 20px;
+    height: 20px;
+    fill: $adress-color;
+}
+
+
+
+&__svg-item:hover {
+    background-color: $text-colors;
+    border-radius: 50%;
+}
+
+
+&__svg-item:hover {
+    background-color: $text-colors;
+    border-radius: 50%;
+    
+}
+
+&__svg-item {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+&__svg-item {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__flex-button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 28px;
@@ -80,85 +213,40 @@
     position: relative;
 }
 
-
-.sot-title {
-    color: $adress-color;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+&__telega {
+    position: absolute;
+    top: 13px;
+    left: 148px;
 }
 
-.flex-footer {
-    margin-right: 70px;
-    height: 100px;
-}
-
-.foot-email-tel {
-    display: flex;
-    flex-direction:column;
-}
-
-.tel {
-    color: $phone-color;
-}
-
-.foot-text {
+ &__text {
     margin-bottom: 20px;
 }
 
-.mailto {
-    color: $phone-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171.4%;
-    margin-bottom: 9px;
-}
 
 
-.adres {
-    color: $adress-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.714;
-    font-style: normal;
-    margin-bottom: 9px;
-}
 
 
-#studiow {
-    color: $adress-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-}
-
-.employees-svg-list {
-    display: flex;
-    gap: 10px;
-    margin-left: 32px;
-    padding-top: 28px;
-    margin-right: 32px;
     
 }
 
-.employes-svg-list {
-    display: flex;
-    gap: 10px;
-    padding-top: 20px;
-}
 
-.employees-svg-item:hover .employees-svg {
-    fill: $adress-color;
-}
 
-.employees-svg-item {
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
