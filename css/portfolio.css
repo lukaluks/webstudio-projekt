@@ -27,6 +27,11 @@ input {
   outline: none;
 }
 
+.foot__svg-item, .presentation__overlay, .presentation__item:hover, .presentation__item, .navigation__button:focus, .navigation__button, .header__tel:focus, .header__tel, .header__items, .header__link:focus, .header__link, .header__item {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -57,7 +62,7 @@ input {
   animation-duration: 2s;
 }
 .header__span1 {
-  color: #2196F3;
+  color: green;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -81,8 +86,6 @@ input {
 .header__item {
   position: relative;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link {
   color: #212121;
@@ -90,26 +93,22 @@ input {
   font-weight: 500;
   line-height: normal;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:focus {
-  color: #2196F3;
+  color: green;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover {
-  color: #2196F3;
+  color: green;
 }
 .header__after::after {
   display: block;
   content: "";
   border-radius: 2px;
-  background: #2196F3;
+  background: green;
   width: 100%;
   height: 4px;
   position: absolute;
@@ -117,7 +116,7 @@ input {
   left: 0px;
 }
 .header__color {
-  color: #2196F3;
+  color: green;
 }
 .header__lists {
   gap: 50px;
@@ -126,16 +125,16 @@ input {
 .header__items {
   align-items: center;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__items:hover .header__email {
-  fill: #2196F3;
+  fill: green;
 }
 .header__items:hover .header__phone {
-  fill: #2196F3;
+  fill: green;
 }
 .header__email {
+  width: 16px;
+  height: 12px;
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -154,21 +153,17 @@ input {
   line-height: normal;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__tel:focus {
-  color: #2196F3;
+  color: green;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__tel:hover {
-  color: #2196F3;
+  color: green;
 }
 .header__box {
   display: flex;
@@ -209,8 +204,6 @@ input {
   border-radius: 4px;
   background: #F5F4FA;
   transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: buttonani;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -229,11 +222,9 @@ input {
   border-radius: 4px;
   background-color: #2196F3;
   transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation__button:hover {
-  background-color: #2196F3;
+  background-color: green;
   color: #fff;
 }
 
@@ -253,13 +244,10 @@ input {
   position: relative;
   overflow: hidden;
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .presentation__item:hover {
   border: 1px solid #EEE;
   background: #fff;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .presentation__overlay {
@@ -271,8 +259,6 @@ input {
   left: 0;
   opacity: 0;
   overflow: hidden;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
 .presentation__item:hover .presentation__overlay {
@@ -338,7 +324,7 @@ input {
   padding-top: 20px;
 }
 .foot__span1 {
-  color: #2196F3;
+  color: green;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -388,8 +374,6 @@ input {
 .foot__svg-item {
   border-radius: 50%;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot__flex-title {
   color: #FFF;
@@ -444,11 +428,11 @@ input {
   fill: #fff;
 }
 .foot__svg-item:hover {
-  background-color: #2196F3;
+  background-color: green;
   border-radius: 50%;
 }
 .foot__svg-item:hover {
-  background-color: #2196F3;
+  background-color: green;
   border-radius: 50%;
 }
 .foot__svg-item {
@@ -471,8 +455,6 @@ input {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot__flex-button {
   padding-top: 10px;
@@ -488,7 +470,7 @@ input {
   line-height: 30px;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: #2196F3;
+  background: green;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;

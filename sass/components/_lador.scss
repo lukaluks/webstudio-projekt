@@ -19,8 +19,7 @@
     }
 
     &__btn {
-        width: 370px;
-        height: 70px;
+        @include width-heit(370px, 70px);
         background: rgba(47, 48, 58, 0.80);
         color: $adress-color;
         text-align: center;

@@ -25,8 +25,7 @@
         border-radius: 4px;
         background: $bakround-color;
         transition-property: background-color, color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %animation;
         animation-name: buttonani;
         animation-duration: 2s;
         animation-timing-function: linear;
@@ -46,8 +45,7 @@
         border-radius: 4px;
         background-color: #2196F3;
         transition-property: background-color, color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %animation;
     }
     
     &__button:hover {

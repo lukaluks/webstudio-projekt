@@ -15,28 +15,25 @@
     position: relative;
     overflow: hidden;
     transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
   }
   
   &__item:hover {
     border: 1px solid $presentation-item;
     background: $adress-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    @extend %animation;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
 
   &__overlay {
     background: rgba(33, 150, 243, 0.90);
-    width: 370px;
-    height: 294px;
+    @include width-heit(370px, 294px);
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     overflow: hidden;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
     transform: translateY(100%);
   }
 

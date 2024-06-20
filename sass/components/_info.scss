@@ -15,8 +15,7 @@
         background-image: url(../img/antenna\ 1.png);
         background-position: center;
         display: block;
-        width: 270px;
-        height: 120px;
+        @include width-heit(270px, 120px);
         margin-bottom: 30px;
     }  
 
@@ -41,8 +40,7 @@
     &__item2::before {
         background-color:  $bakround-color;
         content: '';
-        width: 270px;
-        height: 120px;
+        @include width-heit(270px, 120px);
         background-repeat: no-repeat;
         background-image: url(../img/clock\ 1.png);
         background-position: center;
@@ -63,8 +61,7 @@
     &__item3::before {
         background-color:  $bakround-color;
         content: '';
-        width: 270px;
-        height: 120px;
+        @include width-heit(270px, 120px);
         background-repeat: no-repeat;;
         display: block;
         background-image: url(../img/diagram\ 1.png);
@@ -87,8 +84,7 @@
 &__item4::before {
     background-color:  $bakround-color;
     content: '';
-    width: 270px;
-    height: 120px;
+    @include width-heit(270px, 120px);
     background-repeat: no-repeat;;
     display: block;
     background-image: url(../img/astronaut\ 1.png);
