@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1, h2, ul, li, h3, a, div, p {
   padding: 0;
   margin: 0;
@@ -33,13 +32,25 @@ input {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* або */
-  /* margin: 0 auto; */
+  width: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
 
 .box-container {

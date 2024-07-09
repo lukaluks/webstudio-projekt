@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1, h2, ul, li, h3, a, div, p {
   padding: 0;
   margin: 0;
@@ -27,14 +26,31 @@ input {
   outline: none;
 }
 
+.beckgdrop__box-big, .beckgdrop__box, .beckgdrop__close-box, .foot__svg-item, .customers__svg, .customers__item, .employees__svg-item, .header__tel:focus, .header__tel, .header__items, .header__link:focus, .header__link, .header__item {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* або */
-  /* margin: 0 auto; */
+  width: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
 
 .box-container {
@@ -105,8 +121,6 @@ button:hover {
 .header__item {
   position: relative;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link {
   color: #212121;
@@ -114,8 +128,6 @@ button:hover {
   font-weight: 500;
   line-height: normal;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:focus {
   color: green;
@@ -123,8 +135,6 @@ button:hover {
   font-weight: 500;
   line-height: normal;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover {
   color: green;
@@ -150,8 +160,6 @@ button:hover {
 .header__items {
   align-items: center;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__items:hover .header__email {
   fill: green;
@@ -160,6 +168,8 @@ button:hover {
   fill: green;
 }
 .header__email {
+  width: 16px;
+  height: 12px;
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -178,8 +188,6 @@ button:hover {
   line-height: normal;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__tel:focus {
   color: green;
@@ -188,8 +196,6 @@ button:hover {
   line-height: normal;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__tel:hover {
   color: green;
@@ -444,8 +450,6 @@ button:hover {
 .employees__svg-item {
   border-radius: 50%;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .employees__svg-item:hover .employees__svg {
   fill: #fff;
@@ -483,8 +487,6 @@ button:hover {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers__title {
@@ -509,8 +511,6 @@ button:hover {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers__item:hover {
   border: 1px solid green;
@@ -527,8 +527,6 @@ button:hover {
   margin-left: 32px;
   margin-right: 32px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers__svg:hover {
   fill: green;
@@ -610,8 +608,6 @@ button:hover {
 .foot__svg-item {
   border-radius: 50%;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot__flex-title {
   color: #FFF;
@@ -693,8 +689,6 @@ button:hover {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot__flex-button {
   padding-top: 10px;
@@ -760,8 +754,6 @@ button:hover {
   align-items: center;
   justify-content: center;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .beckgdrop__close-box:hover .beckgdrop__close {
   fill: green;
@@ -799,8 +791,6 @@ button:hover {
   padding-left: 12px;
   padding-right: 12px;
   transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .beckgdrop__box:hover {
   fill: green;
@@ -823,8 +813,6 @@ button:hover {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px 82px 16px;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .beckgdrop__box-big:hover {
   border: 1px solid green;

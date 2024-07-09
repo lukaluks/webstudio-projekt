@@ -1,11 +1,21 @@
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    /* або */
-    /* margin: 0 auto; */
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: 768px) {
+        width: 738px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 1200px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
 }
 
 .box-container {
