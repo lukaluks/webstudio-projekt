@@ -3,8 +3,18 @@
     font-size: 44px;
     padding-top: 200px;
     padding-bottom: 200px;    
-    max-width: 1600px;
-    height: 600px;
+    width: 480px;
+    height: 400px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+    }
 
     &__title {
         color: $adress-color;

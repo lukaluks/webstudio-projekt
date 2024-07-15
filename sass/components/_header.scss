@@ -1,9 +1,19 @@
 .header {
-  @include width-heit(1520px, 82px);
+  @include width-heit(480px, 60px);
   padding-bottom: 25px;
-  padding-top: 24px;
-  padding-top: 24px;
+  padding-top: 10px;
   border: $border2 solid 2px;
+  
+  @media screen and (min-width: 768px) {
+    @include width-heit(768px, 80px);
+    padding-top: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include width-heit(1535px, 82px);
+    padding-top: 24px;
+  }
+  
 
   &__links {
     text-align: center;
@@ -14,26 +24,49 @@
   &__span1 {
     color: $text-colors;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
+
+    @media screen and (min-width: 1200px) {
+      letter-spacing: 0.78px;
+      font-size: 26px;
+    }
   }
 
   &__span2 {
     color: $texts-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
+
+    @media screen and (min-width: 1200px) {
+      letter-spacing: 0.78px;
+      font-size: 26px;
+    }
   }
 
   &__list {
-    gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 88px;
+      gap: 50px;
     display: flex;
-    align-items: center;
-    /* outline: red solid; */
+
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      gap: 50px;
+
+    
+    
+    }
+
   }
 
   &__item {
@@ -49,6 +82,7 @@
     line-height: normal;
     transition-property: color;
     @extend %animation;
+
   }
 
   &__link:focus {
@@ -80,8 +114,21 @@
   }
 
   &__lists {
-    gap: 50px;
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 73px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 50px;
+      flex-direction: row;
+      margin-left: 291px;
+    }
+
   }
 
   
@@ -139,11 +186,19 @@
   color: $text-colors;
 }
 
+&__icon-menu {
+  width: 40px;
+height: 40px;
+margin-left: 276px;
+   @media screen and (min-width: 768px) {
+    display: none;
+   }
+}
+
 &__box {
   display: flex;
   align-items: center;
-  /* outline: red solid; */
-  justify-content: space-between;
+
 }
 
 }
