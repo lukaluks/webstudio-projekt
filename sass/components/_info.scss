@@ -3,9 +3,18 @@
     padding-bottom: 94px;
 
     &__list {
-        display: flex;
+        display: block;
         gap: 30px;
-        justify-content: center;
+       
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 30px;
+        }
     }
 
     &__item::before {
@@ -15,8 +24,18 @@
         background-image: url(../img/antenna\ 1.png);
         background-position: center;
         display: block;
-        @include width-heit(270px, 120px);
         margin-bottom: 30px;
+        @include width-heit(450px, 120px);
+        
+
+        @media screen and (min-width: 768px) {
+            @include width-heit(354px, 120px);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include width-heit(270px, 120px);
+        }
+
     }  
 
     &__text {
@@ -27,6 +46,13 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 12px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+
+       
     }
 
     &__description {
@@ -35,17 +61,35 @@
         font-weight: 400;
         line-height:  171.429%;
         letter-spacing: 0.42px;
+        margin-bottom: 30px;
+        @include width-heit(450px, 50px);
+
+        @media screen and (min-width: 768px) {
+            @include width-heit(354px, 48px)
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include width-heit(270px, 48px)
+        }
     }
 
     &__item2::before {
         background-color:  $bakround-color;
         content: '';
-        @include width-heit(270px, 120px);
+        @include width-heit(450px, 120px);
         background-repeat: no-repeat;
         background-image: url(../img/clock\ 1.png);
         background-position: center;
         display: block;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            @include width-heit(354px, 120px);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include width-heit(270px, 120px);
+        }
     }
 
     &__text2 {
@@ -56,17 +100,30 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 12px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
 
     &__item3::before {
         background-color:  $bakround-color;
         content: '';
-        @include width-heit(270px, 120px);
+        @include width-heit(450px, 120px);
         background-repeat: no-repeat;;
         display: block;
         background-image: url(../img/diagram\ 1.png);
         margin-bottom: 30px;
         background-position: center;
+
+        @media screen and (min-width: 768px) {
+            @include width-heit(354px, 120px);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include width-heit(270px, 120px);
+        }
     }
 
     &__text3 {
@@ -77,6 +134,11 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 12px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
 
     
@@ -84,12 +146,20 @@
 &__item4::before {
     background-color:  $bakround-color;
     content: '';
-    @include width-heit(270px, 120px);
+    @include width-heit(450px, 120px);
     background-repeat: no-repeat;;
     display: block;
     background-image: url(../img/astronaut\ 1.png);
     background-position: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        @include width-heit(354px, 120px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include width-heit(270px, 120px);
+    }
 }
 
 &__text4 {
@@ -100,6 +170,13 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 12px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
 }
 
     
@@ -107,7 +184,7 @@
     
     
     
-}
+
 
 
 

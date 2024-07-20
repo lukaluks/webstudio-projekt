@@ -4,27 +4,44 @@
     &__title {
         text-align: center;
         font-family: Roboto;
-        font-size: 36px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 1.08px;
-        padding-top: 94px;
+        letter-spacing: 0.84px;
+        padding-top: 60px;
+        margin-bottom: 30px;
+
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+            padding-top: 94px;
         margin-bottom: 50px;
+        }
     }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         padding-bottom: 94px;
     }
 
     &__item {
-        @include width-heit(170px, 92px);
+        @include width-heit(210px, 92px);
         border-radius: 4px;
         border: 1px solid $border-info;
         transition-property: color;
         @extend %animation;
+
+        @media screen and (min-width: 768px) {
+            @include width-heit(226px, 92px);
+        }
+
+        @media screen and (min-width: 1200px){
+            @include width-heit(170px, 92px);
+        }
     }
 
     &__item:hover {
@@ -41,12 +58,23 @@
    &__svg {
     @include width-heit(106px, 60px);
     fill: $svg-color;
+    
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 52px;
+    margin-right: 52px;
     transition-property: fill;
     @extend %animation;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 60px;
+        margin-right: 60px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+    }
    } 
 
    &__svg:hover {

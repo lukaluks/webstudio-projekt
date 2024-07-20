@@ -77,23 +77,17 @@ button:hover {
 }
 
 .header {
-  width: 480px;
-  height: 60px;
   padding-bottom: 25px;
   padding-top: 10px;
   border: #ECECEC solid 2px;
 }
 @media screen and (min-width: 768px) {
   .header {
-    width: 768px;
-    height: 80px;
     padding-top: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    width: 1535px;
-    height: 82px;
     padding-top: 24px;
   }
 }
@@ -259,36 +253,35 @@ button:hover {
 
 .information {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img.png);
+  background-size: cover;
   font-size: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 480px;
-  height: 400px;
-}
-@media screen and (min-width: 768px) {
-  .information {
-    width: 768px;
-    height: 400px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .information {
-    width: 1600px;
-    height: 600px;
-  }
 }
 .information__title {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 136.364%;
-  letter-spacing: 2.64px;
+  line-height: 161.538%;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  padding-bottom: 30;
-  margin: 0 auto;
-  width: 696px;
+  width: 360px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .information__title {
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+    font-size: 44px;
+    width: 696px;
+  }
 }
 .information__button:focus {
   border-radius: 4px;
@@ -307,6 +300,9 @@ button:hover {
   padding-right: 32px;
 }
 .information__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 4px;
   background: green;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -316,11 +312,16 @@ button:hover {
   letter-spacing: 0.96px;
   color: #fff;
   font-size: 16px;
-  margin-left: 492px;
-  padding-left: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 32px;
+}
+@media screen and (min-width: 1200px) {
+  .information__button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .info {
@@ -328,9 +329,20 @@ button:hover {
   padding-bottom: 94px;
 }
 .info__list {
-  display: flex;
+  display: block;
   gap: 30px;
-  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 .info__item::before {
   background-color: #F5F4FA;
@@ -339,9 +351,21 @@ button:hover {
   background-image: url(../img/antenna\ 1.png);
   background-position: center;
   display: block;
-  width: 270px;
-  height: 120px;
   margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
+}
+@media screen and (min-width: 768px) {
+  .info__item::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__item::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .info__text {
   color: #212121;
@@ -351,6 +375,12 @@ button:hover {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .info__text {
+    text-align: left;
+  }
 }
 .info__description {
   color: #757575;
@@ -358,17 +388,44 @@ button:hover {
   font-weight: 400;
   line-height: 171.429%;
   letter-spacing: 0.42px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  .info__description {
+    width: 354px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__description {
+    width: 270px;
+    height: 48px;
+  }
 }
 .info__item2::before {
   background-color: #F5F4FA;
   content: "";
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   background-image: url(../img/clock\ 1.png);
   background-position: center;
   display: block;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .info__item2::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__item2::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .info__text2 {
   color: #212121;
@@ -378,17 +435,35 @@ button:hover {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .info__text2 {
+    text-align: left;
+  }
 }
 .info__item3::before {
   background-color: #F5F4FA;
   content: "";
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   display: block;
   background-image: url(../img/diagram\ 1.png);
   margin-bottom: 30px;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .info__item3::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__item3::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .info__text3 {
   color: #212121;
@@ -398,17 +473,35 @@ button:hover {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .info__text3 {
+    text-align: left;
+  }
 }
 .info__item4::before {
   background-color: #F5F4FA;
   content: "";
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   display: block;
   background-image: url(../img/astronaut\ 1.png);
   background-position: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .info__item4::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__item4::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .info__text4 {
   color: #212121;
@@ -418,11 +511,23 @@ button:hover {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .info__text4 {
+    text-align: left;
+  }
 }
 
 .labor {
   padding-bottom: 94px;
   padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .labor {
+    display: inline;
+  }
 }
 .labor__title {
   color: #212121;
@@ -463,25 +568,49 @@ button:hover {
 .employees__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .employees__title {
+    letter-spacing: 0.84px;
+    font-size: 36px;
+  }
+}
 .employees__list {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .employees__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .employees__item {
   background-color: #fff;
-  width: 270px;
-  height: 428px;
+  width: 450px;
+  height: 622px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-.employees__img {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .employees__item {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employees__item {
+    width: 270px;
+    height: 428px;
+  }
 }
 .employees__text {
   color: #212121;
@@ -508,6 +637,7 @@ button:hover {
   padding-top: 28px;
   margin-right: 32px;
   padding-top: 20px;
+  justify-content: center;
 }
 .employees__svg-item {
   border-radius: 50%;
@@ -554,25 +684,46 @@ button:hover {
 .customers__title {
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 1.08px;
-  padding-top: 94px;
-  margin-bottom: 50px;
+  letter-spacing: 0.84px;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-size: 36px;
+    line-height: 1.16;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
 }
 .customers__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition-property: color;
+}
+@media screen and (min-width: 768px) {
+  .customers__item {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    width: 170px;
+    height: 92px;
+  }
 }
 .customers__item:hover {
   border: 1px solid green;
@@ -586,9 +737,21 @@ button:hover {
   fill: grey;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 52px;
+  margin-right: 52px;
   transition-property: fill;
+}
+@media screen and (min-width: 768px) {
+  .customers__svg {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .customers__svg {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }
 .customers__svg:hover {
   fill: green;
@@ -596,11 +759,14 @@ button:hover {
 
 .foot {
   background-color: #2F303A;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .foot__flex {
   display: flex;
+  flex-direction: column;
 }
 .foot__flex-footer {
   margin-right: 70px;

@@ -1,16 +1,13 @@
 .header {
-  @include width-heit(480px, 60px);
   padding-bottom: 25px;
   padding-top: 10px;
   border: $border2 solid 2px;
   
   @media screen and (min-width: 768px) {
-    @include width-heit(768px, 80px);
     padding-top: 14px;
   }
 
   @media screen and (min-width: 1200px) {
-    @include width-heit(1535px, 82px);
     padding-top: 24px;
   }
   

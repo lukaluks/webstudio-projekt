@@ -53,23 +53,17 @@ input {
 }
 
 .header {
-  width: 480px;
-  height: 60px;
   padding-bottom: 25px;
   padding-top: 10px;
   border: #ECECEC solid 2px;
 }
 @media screen and (min-width: 768px) {
   .header {
-    width: 768px;
-    height: 80px;
     padding-top: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    width: 1535px;
-    height: 82px;
     padding-top: 24px;
   }
 }
@@ -361,11 +355,14 @@ input {
 
 .foot {
   background-color: #2F303A;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .foot__flex {
   display: flex;
+  flex-direction: column;
 }
 .foot__flex-footer {
   margin-right: 70px;

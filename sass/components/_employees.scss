@@ -6,30 +6,49 @@
   &__title {
     color: $texts-color;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 1200px) {
+      letter-spacing: 0.84px;
+      font-size: 36px;
+    }
   }
 
   &__list {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     background-color: $adress-color;
-    @include width-heit(270px, 428px);
+    @include width-heit(450px, 622px);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+      @include width-heit(354px, 536px)
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include width-heit(270px, 428px);
+    }
   }
 
   
-   &__img {
-    width: 270px;
-  }
+   
 
   &__text {
     color: $texts-color;
@@ -58,6 +77,8 @@
     padding-top: 28px;
     margin-right: 32px;
     padding-top: 20px;
+
+    justify-content: center;
   }
 
   &__svg-item {
