@@ -274,7 +274,13 @@ button:hover {
   margin-right: auto;
   max-width: 1600px;
   padding-top: 118px;
-  padding-bottom: 198px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .information {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .information__title {
   margin-left: auto;
@@ -353,13 +359,15 @@ button:hover {
   }
 }
 .info__list {
-  display: block;
+  display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .info__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -424,7 +432,6 @@ button:hover {
   font-weight: 400;
   line-height: 171.429%;
   letter-spacing: 0.42px;
-  margin-bottom: 30px;
 }
 .info__item2::before {
   background-color: #F5F4FA;
