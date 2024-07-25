@@ -34,19 +34,27 @@
       &__span1 {
         color: $text-colors;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.78px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+        }
       }
     
       &__span2 {
         color: $adress-color;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.78px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+        }
       }
 
       &__email-tel {

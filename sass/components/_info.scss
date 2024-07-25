@@ -1,6 +1,11 @@
 .info {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__list {
         display: block;
@@ -17,7 +22,7 @@
         }
     }
 
-    &__item::before {
+    &__item1::before {
         background-color:  $bakround-color;
         background-repeat: no-repeat;
         content: '';
@@ -25,7 +30,10 @@
         background-position: center;
         display: block;
         margin-bottom: 30px;
-        @include width-heit(450px, 120px);
+        
+        height: 120px;
+
+        
         
 
         @media screen and (min-width: 768px) {
@@ -37,6 +45,18 @@
         }
 
     }  
+
+    &__item {
+        max-width: 450px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
+    }
 
     &__text {
         color: $texts-color;
@@ -62,21 +82,16 @@
         line-height:  171.429%;
         letter-spacing: 0.42px;
         margin-bottom: 30px;
-        @include width-heit(450px, 50px);
+        
 
-        @media screen and (min-width: 768px) {
-            @include width-heit(354px, 48px)
-        }
-
-        @media screen and (min-width: 1200px) {
-            @include width-heit(270px, 48px)
-        }
+       
     }
 
     &__item2::before {
         background-color:  $bakround-color;
         content: '';
-        @include width-heit(450px, 120px);
+        
+        height: 120px;
         background-repeat: no-repeat;
         background-image: url(../img/clock\ 1.png);
         background-position: center;
@@ -91,6 +106,9 @@
             @include width-heit(270px, 120px);
         }
     }
+
+   
+
 
     &__text2 {
         color: $texts-color;
@@ -110,7 +128,8 @@
     &__item3::before {
         background-color:  $bakround-color;
         content: '';
-        @include width-heit(450px, 120px);
+        max-width: 450px;
+        height: 120px;
         background-repeat: no-repeat;;
         display: block;
         background-image: url(../img/diagram\ 1.png);
@@ -146,7 +165,8 @@
 &__item4::before {
     background-color:  $bakround-color;
     content: '';
-    @include width-heit(450px, 120px);
+    max-width: 450px;
+    height: 120px;
     background-repeat: no-repeat;;
     display: block;
     background-image: url(../img/astronaut\ 1.png);

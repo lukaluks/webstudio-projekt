@@ -20,6 +20,7 @@ li {
 
 button {
   border: none;
+  background: none;
 }
 
 input {
@@ -35,6 +36,7 @@ input {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  outline: solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -215,10 +217,23 @@ input {
 .header__icon-menu {
   width: 40px;
   height: 40px;
-  margin-left: 276px;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .header__icon-menu {
+    display: none;
+  }
+}
+.header__button {
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button {
     display: none;
   }
 }
@@ -240,10 +255,18 @@ input {
 }
 .navigation__list {
   display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
   gap: 8px;
-  padding-left: 300px;
+  justify-content: flex-start;
   height: 38px;
   flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    justify-content: center;
+  }
 }
 .navigation__button {
   color: #212121;
@@ -252,6 +275,8 @@ input {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  width: 130px;
+  height: 38px;
   font-size: 16px;
   font-weight: 500;
   line-height: 162.5%;
@@ -262,6 +287,12 @@ input {
   animation-name: buttonani;
   animation-duration: 2s;
   animation-timing-function: linear;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__button {
+    width: 103px;
+    height: 38px;
+  }
 }
 .navigation__button:focus {
   color: #fff;
@@ -384,18 +415,28 @@ input {
 .foot__span1 {
   color: green;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
 }
+@media screen and (min-width: 1200px) {
+  .foot__span1 {
+    font-size: 26px;
+  }
+}
 .foot__span2 {
   color: #fff;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+@media screen and (min-width: 1200px) {
+  .foot__span2 {
+    font-size: 26px;
+  }
 }
 .foot__email-tel {
   display: flex;

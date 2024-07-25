@@ -20,6 +20,7 @@ li {
 
 button {
   border: none;
+  background: none;
 }
 
 input {
@@ -35,6 +36,7 @@ input {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  outline: solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -239,10 +241,23 @@ button:hover {
 .header__icon-menu {
   width: 40px;
   height: 40px;
-  margin-left: 276px;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .header__icon-menu {
+    display: none;
+  }
+}
+.header__button {
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button {
     display: none;
   }
 }
@@ -262,7 +277,6 @@ button:hover {
   padding-bottom: 200px;
 }
 .information__title {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
@@ -272,8 +286,12 @@ button:hover {
   line-height: 161.538%;
   letter-spacing: 1.56px;
   text-transform: uppercase;
-  width: 360px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .information__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .information__title {
@@ -325,8 +343,14 @@ button:hover {
 }
 
 .info {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .info__list {
   display: block;
@@ -344,7 +368,7 @@ button:hover {
     gap: 30px;
   }
 }
-.info__item::before {
+.info__item1::before {
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   content: "";
@@ -352,19 +376,31 @@ button:hover {
   background-position: center;
   display: block;
   margin-bottom: 30px;
-  width: 450px;
   height: 120px;
 }
 @media screen and (min-width: 768px) {
-  .info__item::before {
+  .info__item1::before {
     width: 354px;
     height: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .info__item::before {
+  .info__item1::before {
     width: 270px;
     height: 120px;
+  }
+}
+.info__item {
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .info__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__item {
+    max-width: 270px;
   }
 }
 .info__text {
@@ -389,25 +425,10 @@ button:hover {
   line-height: 171.429%;
   letter-spacing: 0.42px;
   margin-bottom: 30px;
-  width: 450px;
-  height: 50px;
-}
-@media screen and (min-width: 768px) {
-  .info__description {
-    width: 354px;
-    height: 48px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .info__description {
-    width: 270px;
-    height: 48px;
-  }
 }
 .info__item2::before {
   background-color: #F5F4FA;
   content: "";
-  width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   background-image: url(../img/clock\ 1.png);
@@ -445,7 +466,7 @@ button:hover {
 .info__item3::before {
   background-color: #F5F4FA;
   content: "";
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   display: block;
@@ -483,7 +504,7 @@ button:hover {
 .info__item4::before {
   background-color: #F5F4FA;
   content: "";
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   display: block;
@@ -595,8 +616,6 @@ button:hover {
 }
 .employees__item {
   background-color: #fff;
-  width: 450px;
-  height: 622px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
@@ -637,6 +656,7 @@ button:hover {
   padding-top: 28px;
   margin-right: 32px;
   padding-top: 20px;
+  padding-bottom: 36px;
   justify-content: center;
 }
 .employees__svg-item {
@@ -705,6 +725,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
+  justify-content: center;
 }
 .customers__item {
   width: 210px;
@@ -788,18 +809,28 @@ button:hover {
 .foot__span1 {
   color: green;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
 }
+@media screen and (min-width: 1200px) {
+  .foot__span1 {
+    font-size: 26px;
+  }
+}
 .foot__span2 {
   color: #fff;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+@media screen and (min-width: 1200px) {
+  .foot__span2 {
+    font-size: 26px;
+  }
 }
 .foot__email-tel {
   display: flex;
