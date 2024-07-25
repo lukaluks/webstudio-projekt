@@ -1,5 +1,6 @@
 .customers {
-
+       padding-top: 60px;
+       padding-bottom: 60px;
 
     &__title {
         text-align: center;
@@ -9,7 +10,6 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.84px;
-        padding-top: 60px;
         margin-bottom: 30px;
 
 
@@ -25,7 +25,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        padding-bottom: 94px;
         justify-content: center;
     }
 

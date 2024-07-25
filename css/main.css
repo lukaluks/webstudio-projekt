@@ -582,8 +582,8 @@ button:hover {
 }
 
 .employees {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 120px;
   background: #F5F4FA;
 }
 .employees__title {
@@ -701,6 +701,10 @@ button:hover {
   transition-property: background-color;
 }
 
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .customers__title {
   text-align: center;
   font-family: Roboto;
@@ -709,7 +713,6 @@ button:hover {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.84px;
-  padding-top: 60px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -724,7 +727,6 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
   justify-content: center;
 }
 .customers__item {
