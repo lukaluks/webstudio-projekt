@@ -375,7 +375,6 @@ button:hover {
   background-image: url(../img/antenna\ 1.png);
   background-position: center;
   display: block;
-  margin-bottom: 30px;
   height: 120px;
 }
 @media screen and (min-width: 768px) {
@@ -412,6 +411,7 @@ button:hover {
   text-transform: uppercase;
   margin-bottom: 12px;
   text-align: center;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .info__text {
@@ -434,7 +434,6 @@ button:hover {
   background-image: url(../img/clock\ 1.png);
   background-position: center;
   display: block;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .info__item2::before {
@@ -457,6 +456,7 @@ button:hover {
   text-transform: uppercase;
   margin-bottom: 12px;
   text-align: center;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .info__text2 {
@@ -471,7 +471,6 @@ button:hover {
   background-repeat: no-repeat;
   display: block;
   background-image: url(../img/diagram\ 1.png);
-  margin-bottom: 30px;
   background-position: center;
 }
 @media screen and (min-width: 768px) {
@@ -495,11 +494,15 @@ button:hover {
   text-transform: uppercase;
   margin-bottom: 12px;
   text-align: center;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .info__text3 {
     text-align: left;
   }
+}
+.info li {
+  outline: solid green;
 }
 .info__item4::before {
   background-color: #F5F4FA;
@@ -510,7 +513,6 @@ button:hover {
   display: block;
   background-image: url(../img/astronaut\ 1.png);
   background-position: center;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .info__item4::before {
@@ -533,6 +535,7 @@ button:hover {
   text-transform: uppercase;
   margin-bottom: 12px;
   text-align: center;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .info__text4 {
