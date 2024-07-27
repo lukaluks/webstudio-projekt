@@ -9,9 +9,9 @@ a {
 
 img {
   display: block;
+  height: auto;
   width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 li {
@@ -36,7 +36,6 @@ input {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  outline: solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -275,7 +274,7 @@ input {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  width: 130px;
+  width: 125px;
   height: 38px;
   font-size: 16px;
   font-weight: 500;
@@ -288,9 +287,14 @@ input {
   animation-duration: 2s;
   animation-timing-function: linear;
 }
+@media screen and (min-width: 768px) {
+  .navigation__button {
+    width: 125px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .navigation__button {
-    width: 103px;
+    width: 130px;
     height: 38px;
   }
 }
@@ -316,20 +320,37 @@ input {
 
 .presentation {
   padding-bottom: 94px;
+  margin-top: 80px;
 }
 .presentation__list {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .presentation__list {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 .presentation__item {
   border: 1px solid #EEE;
-  max-width: 370px;
   flex-basis: calc(100% - 20px);
   position: relative;
   overflow: hidden;
   transition-property: box-shadow;
+}
+@media screen and (min-width: 768px) {
+  .presentation__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .presentation__item {
+    max-width: 370px;
+    height: 404px;
+  }
 }
 .presentation__item:hover {
   border: 1px solid #EEE;

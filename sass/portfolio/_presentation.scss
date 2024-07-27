@@ -1,21 +1,36 @@
 .presentation {
   padding-bottom: 94px;
+  margin-top: 80px;
 
   &__list {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+   gap: 30px;
+
+     @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: flex-start;
+     }
   }
 
   &__item {
     border: 1px solid $presentation-item;
-    max-width: 370px;
     flex-basis: calc(100% - 20px);
     position: relative;
     overflow: hidden;
+    
     transition-property: box-shadow;
     @extend %animation;
+    
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+      height: 404px;
+    }
   }
   
   &__item:hover {

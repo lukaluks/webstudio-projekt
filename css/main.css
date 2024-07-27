@@ -9,9 +9,9 @@ a {
 
 img {
   display: block;
+  height: auto;
   width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 li {
@@ -36,7 +36,6 @@ input {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  outline: solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -507,9 +506,6 @@ button:hover {
   .info__text3 {
     text-align: left;
   }
-}
-.info li {
-  outline: solid green;
 }
 .info__item4::before {
   background-color: #F5F4FA;
