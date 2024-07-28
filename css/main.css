@@ -1002,12 +1002,18 @@ button:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .beckgdrop__modal {
-  width: 528px;
-  height: 581px;
+  width: 320px;
+  height: 609px;
   flex-shrink: 0;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .beckgdrop__modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .beckgdrop__close-box {
   width: 30px;
@@ -1015,7 +1021,7 @@ button:hover {
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-left: 490px;
+  margin-left: auto;
   margin-top: 8px;
   margin-right: 8px;
   align-items: center;
@@ -1033,6 +1039,7 @@ button:hover {
 .beckgdrop__modal-title {
   margin-left: 40px;
   margin-right: 40px;
+  width: 370px;
 }
 .beckgdrop__form-list {
   padding-left: 41px;
@@ -1049,7 +1056,6 @@ button:hover {
   margin-top: 10px;
 }
 .beckgdrop__box {
-  width: 448px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1070,12 +1076,14 @@ button:hover {
 }
 .beckgdrop__form-input {
   border: none;
-  width: 394px;
+}
+@media screen and (min-width: 1200px) {
+  .beckgdrop__form-input {
+    width: 394px;
+  }
 }
 .beckgdrop__box-big {
   display: block;
-  width: 448px;
-  height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px 82px 16px;
@@ -1094,7 +1102,6 @@ button:hover {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
-  width: 400px;
 }
 .beckgdrop__modal-box {
   display: flex;
