@@ -170,8 +170,18 @@ button:hover {
   width: 100%;
   height: 4px;
   position: absolute;
-  top: 46px;
-  left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .header__after::after {
+    top: 47px;
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__after::after {
+    top: 40px;
+    left: 0px;
+  }
 }
 .header__color {
   color: green;
@@ -305,22 +315,6 @@ button:hover {
     font-size: 44px;
     width: 696px;
   }
-}
-.information__button:focus {
-  border-radius: 4px;
-  background: green;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 187.5%;
-  letter-spacing: 0.96px;
-  color: #fff;
-  font-size: 16px;
-  margin-left: 492px;
-  padding-left: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 32px;
 }
 .information__button {
   display: block;
@@ -553,7 +547,7 @@ button:hover {
 }
 @media screen and (min-width: 1200px) {
   .labor {
-    display: inline;
+    display: block;
   }
 }
 .labor__title {
@@ -1002,12 +996,22 @@ button:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .beckgdrop__modal {
-  width: 320px;
-  height: 609px;
   flex-shrink: 0;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 320px) {
+  .beckgdrop__modal {
+    width: 320px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .beckgdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .beckgdrop__modal {
@@ -1028,6 +1032,20 @@ button:hover {
   justify-content: center;
   transition-property: fill;
 }
+.beckgdrop__modal-description {
+  color: #757575;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  font-family: Roboto;
+}
+@media screen and (min-width: 1200px) {
+  .beckgdrop__modal-description {
+    font-size: 14px;
+  }
+}
 .beckgdrop__close-box:hover .beckgdrop__close {
   fill: green;
 }
@@ -1037,9 +1055,31 @@ button:hover {
   cursor: pointer;
 }
 .beckgdrop__modal-title {
-  margin-left: 40px;
-  margin-right: 40px;
-  width: 370px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.6px;
+  font-family: Roboto;
+}
+@media screen and (min-width: 320px) {
+  .beckgdrop__modal-title {
+    width: 230px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .beckgdrop__modal-title {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .beckgdrop__modal-title {
+    width: 448px;
+  }
 }
 .beckgdrop__form-list {
   padding-left: 41px;
@@ -1117,12 +1157,17 @@ button:hover {
 .beckgdrop__modal-span {
   color: green;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
+}
+@media screen and (min-width: 1200px) {
+  .beckgdrop__modal-span {
+    font-size: 14px;
+  }
 }
 .beckgdrop__modal-button {
   border-radius: 4px;
@@ -1139,8 +1184,9 @@ button:hover {
   height: 50px;
   flex-shrink: 0;
   border: none;
-  margin-left: 165px;
-  margin-right: 163px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .beckgdrop.is-hidden {
