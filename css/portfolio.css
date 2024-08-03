@@ -424,7 +424,6 @@ input {
 }
 .foot__flex {
   display: flex;
-  flex-direction: column;
 }
 .foot__flex-footer {
   margin-right: 70px;
@@ -607,6 +606,10 @@ input {
   flex-shrink: 0;
   margin-left: 12px;
   position: relative;
+  margin-top: 20px;
+}
+.foot__display-flex {
+  display: flex;
 }
 .foot__telega {
   position: absolute;
