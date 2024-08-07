@@ -8,23 +8,39 @@
 
 
     &__flex{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: start;
+       justify-content: center;
+       gap: 60px;
+
+       @media screen and (min-width: 768px) {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
         gap: 60px;
-        
+       }
+
+       @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: start;
+        justify-content: normal;
+        gap: 0px;
+       }
     }
 
     &__flex-footer {
-        margin-right: 70px;
-        height: 130px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 232px;
+
+        @media screen and (min-width: 1200px) {
+            width: 230px;
+        }
         
     }
 
     &__flex-footer2 {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 70px;
+        margin-right: 93px;
     }
 
     &__svg {
@@ -32,18 +48,11 @@
         fill: $text-color;
     }
 
-    &__svg-list{
-        display: flex;
-        gap: 10px;
-        margin-left: 32px;
-        padding-top: 28px;
-        margin-right: 32px;
-        padding-top: 20px;
-      }
+   
 
       &__span1 {
-        color: $text-colors;
-        font-family: Raleway;
+        color: $text-colors;   
+        font-family: Raleway;   
         font-size: 24px;
         font-weight: 700;
         line-height: normal;
@@ -89,6 +98,7 @@
         font-weight: 400;
         line-height: 1.714;
         font-style: normal;
+        text-align: center;
     }
 
     &__tel {
@@ -135,6 +145,10 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
   
@@ -164,25 +178,18 @@
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 358px;
-        margin-bottom: 0px;
+        width: 358px;
     }
 }
 
 &__svg-list {
     display: flex;
     gap: 10px;
-    
+    margin-top: 20px;
+
 }
 
-&__svg-list {
-    display: flex;
-    gap: 10px;
-    margin-left: 32px;
-    padding-top: 28px;
-    margin-right: 32px;
-    
-}
+
     
 &__svg-item:hover &__svg {
     fill: $adress-color;
@@ -248,6 +255,7 @@
     @include width-heit(200px, 50px);
     flex-shrink: 0;
     position: relative;
+    
 
     @media screen and (min-width: 1200px) {
         margin-left: 12px;
@@ -258,6 +266,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        
+    }
 }
 
 &__telega {
@@ -270,6 +284,10 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
 }
 
 

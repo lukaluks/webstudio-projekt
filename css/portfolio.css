@@ -424,31 +424,43 @@ input {
 }
 .foot__flex {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
   gap: 60px;
 }
+@media screen and (min-width: 768px) {
+  .foot__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__flex {
+    display: flex;
+    align-items: start;
+    justify-content: normal;
+    gap: 0px;
+  }
+}
 .foot__flex-footer {
-  margin-right: 70px;
-  height: 130px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 232px;
+}
+@media screen and (min-width: 1200px) {
+  .foot__flex-footer {
+    width: 230px;
+  }
 }
 .foot__flex-footer2 {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 70px;
+  margin-right: 93px;
 }
 .foot__svg {
   width: 20px;
   height: 20px;
   fill: #757575;
-}
-.foot__svg-list {
-  display: flex;
-  gap: 10px;
-  margin-left: 32px;
-  padding-top: 28px;
-  margin-right: 32px;
-  padding-top: 20px;
 }
 .foot__span1 {
   color: green;
@@ -499,6 +511,7 @@ input {
   font-weight: 400;
   line-height: 1.714;
   font-style: normal;
+  text-align: center;
 }
 .foot__tel {
   color: rgba(255, 255, 255, 0.6);
@@ -540,6 +553,11 @@ input {
   letter-spacing: 0.42px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .foot__flex-title {
+    text-align: left;
+  }
+}
 .foot__flex-input {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -566,20 +584,13 @@ input {
 }
 @media screen and (min-width: 1200px) {
   .foot__flex-input {
-    max-width: 358px;
-    margin-bottom: 0px;
+    width: 358px;
   }
 }
 .foot__svg-list {
   display: flex;
   gap: 10px;
-}
-.foot__svg-list {
-  display: flex;
-  gap: 10px;
-  margin-left: 32px;
-  padding-top: 28px;
-  margin-right: 32px;
+  margin-top: 20px;
 }
 .foot__svg-item:hover .foot__svg {
   fill: #fff;
@@ -648,6 +659,12 @@ input {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .foot__display-flex {
+    flex-wrap: nowrap;
+  }
 }
 .foot__telega {
   position: absolute;
@@ -658,4 +675,9 @@ input {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .foot__text {
+    justify-content: start;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
