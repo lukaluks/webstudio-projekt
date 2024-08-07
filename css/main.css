@@ -787,10 +787,18 @@ button:hover {
 }
 .foot__flex {
   display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 .foot__flex-footer {
   margin-right: 70px;
-  height: 100px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.foot__flex-footer2 {
+  margin-left: auto;
+  margin-right: auto;
 }
 .foot__svg {
   width: 20px;
@@ -834,6 +842,19 @@ button:hover {
 .foot__email-tel {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .foot__email-tel {
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__email-tel {
+    display: flex;
+    gap: 9px;
+    align-items: start;
+  }
 }
 .foot__adres {
   color: #fff;
@@ -841,17 +862,17 @@ button:hover {
   font-weight: 400;
   line-height: 1.714;
   font-style: normal;
-  margin-bottom: 9px;
 }
 .foot__tel {
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 .foot__mailto {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 171.4%;
-  margin-bottom: 9px;
+  text-align: center;
 }
 .foot__sot-title {
   color: #fff;
@@ -861,7 +882,12 @@ button:hover {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
-  padding-left: 69px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .foot__sot-title {
+    text-align: start;
+  }
 }
 .foot__svg-item {
   border-radius: 50%;
@@ -875,34 +901,41 @@ button:hover {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
-  padding-left: 95px;
+  text-align: center;
 }
 .foot__flex-input {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  padding-right: 295px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0.48px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 93px;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .foot__flex-input {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__flex-input {
+    max-width: 358px;
+    margin-bottom: 0px;
+  }
 }
 .foot__svg-list {
   display: flex;
   gap: 10px;
-  padding-top: 20px;
-  padding-left: 35px;
 }
 .foot__svg-list {
   display: flex;
@@ -967,12 +1000,17 @@ button:hover {
   width: 200px;
   height: 50px;
   flex-shrink: 0;
-  margin-left: 12px;
   position: relative;
-  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .foot__flex-button {
+    margin-left: 12px;
+  }
 }
 .foot__display-flex {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .foot__telega {
   position: absolute;
@@ -981,6 +1019,8 @@ button:hover {
 }
 .foot__text {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .beckgdrop {
