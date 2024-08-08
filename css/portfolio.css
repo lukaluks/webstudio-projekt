@@ -328,7 +328,12 @@ input {
 }
 
 .presentation {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .presentation {
+    padding-bottom: 94px;
+  }
 }
 .presentation__list {
   display: flex;
@@ -432,7 +437,9 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    gap: 60px;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
+    row-gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {

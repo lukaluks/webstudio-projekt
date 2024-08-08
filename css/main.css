@@ -795,7 +795,9 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    gap: 60px;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
+    row-gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
