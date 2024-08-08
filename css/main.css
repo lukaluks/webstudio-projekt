@@ -653,13 +653,9 @@ button:hover {
   display: flex;
   gap: 10px;
   margin-left: 32px;
-  margin-top: 28px;
+  margin-top: 16px;
   margin-right: 32px;
   justify-content: center;
-}
-.employees__svg-item {
-  border-radius: 50%;
-  transition-property: background-color;
 }
 .employees__svg-item:hover .employees__svg {
   fill: #fff;
@@ -685,15 +681,6 @@ button:hover {
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
-}
-.employees__svg-item {
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  padding-left: 12px;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
@@ -702,6 +689,12 @@ button:hover {
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .customers__title {
   text-align: center;
@@ -717,7 +710,6 @@ button:hover {
   .customers__title {
     font-size: 36px;
     line-height: 1.16;
-    padding-top: 94px;
     margin-bottom: 50px;
   }
 }
@@ -816,9 +808,11 @@ button:hover {
     width: 230px;
   }
 }
-.foot__flex-footer2 {
-  margin-left: 70px;
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .foot__flex-footer2 {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .foot__svg {
   width: 20px;

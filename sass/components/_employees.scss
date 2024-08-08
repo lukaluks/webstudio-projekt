@@ -75,18 +75,15 @@
     display: flex;
     gap: 10px;
     margin-left: 32px;
-    margin-top: 28px;
+    margin-top: 16px;
     margin-right: 32px;
-
-
     justify-content: center;
-  }
+    }
 
-  &__svg-item {
-    border-radius: 50%;
-    transition-property: background-color;
-    @extend %animation;
-  }
+
+   
+  
+
 
   &__svg-item:hover &__svg {
     fill: $adress-color;
@@ -107,20 +104,15 @@
 }
 
 
+
+
 &__svg-item:hover {
     background-color: $text-colors;
     border-radius: 50%;
     
 }
 
-&__svg-item {
-  @include width-heit(44px, 44px);
-    text-align: center;
-    padding-left: 12px;
-    padding-top: 12px;
-    padding-right: 12px;
-    padding-bottom: 12px;
-}
+
 
 &__svg-item {
   @include width-heit(44px, 44px);
@@ -134,6 +126,8 @@
     transition-property: background-color;
     @extend %animation;
 }
+
+
 
 
   

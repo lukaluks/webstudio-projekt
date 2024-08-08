@@ -1,7 +1,18 @@
 
 .navigation {
-    padding-top: 94px;
-    padding-bottom: 50px;
+
+    padding-top: 60px;
+    padding-bottom: 86px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    padding-bottom: 48px;
+    }
+    
 
     &__list {
         display: flex;
@@ -24,7 +35,7 @@
         padding-bottom: 6px;
         padding-left: 22px;
         padding-right: 22px;
-        width: 125px;
+        max-width:  130px;
         height: 38px;
         font-size: 16px;
         font-weight: 500;
@@ -37,15 +48,6 @@
         animation-name: buttonani;
         animation-duration: 2s;
         animation-timing-function: linear;
-
-        @media screen and (min-width: 768px) {
-            width: 125px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 130px;
-            height: 38px;
-        }
     }
     
     &__button:focus {

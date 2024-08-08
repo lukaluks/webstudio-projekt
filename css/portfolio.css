@@ -259,8 +259,19 @@ input {
 }
 
 .navigation {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 86px;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    padding-top: 94px;
+    padding-bottom: 48px;
+  }
 }
 .navigation__list {
   display: flex;
@@ -284,7 +295,7 @@ input {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  width: 125px;
+  max-width: 130px;
   height: 38px;
   font-size: 16px;
   font-weight: 500;
@@ -296,17 +307,6 @@ input {
   animation-name: buttonani;
   animation-duration: 2s;
   animation-timing-function: linear;
-}
-@media screen and (min-width: 768px) {
-  .navigation__button {
-    width: 125px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .navigation__button {
-    width: 130px;
-    height: 38px;
-  }
 }
 .navigation__button:focus {
   color: #fff;
@@ -330,7 +330,6 @@ input {
 
 .presentation {
   padding-bottom: 94px;
-  margin-top: 80px;
 }
 .presentation__list {
   display: flex;
@@ -453,9 +452,11 @@ input {
     width: 230px;
   }
 }
-.foot__flex-footer2 {
-  margin-left: 70px;
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .foot__flex-footer2 {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .foot__svg {
   width: 20px;
