@@ -584,6 +584,12 @@ button:hover {
   padding-bottom: 60px;
   background: #F5F4FA;
 }
+@media screen and (min-width: 1200px) {
+  .employees {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .employees__title {
   color: #212121;
   text-align: center;
