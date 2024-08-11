@@ -50,48 +50,66 @@
             <a href="tel:+380961111111"  class="header__tel">+38 096 111 11 11</a>
           </li>
         </ul>
-       <button class="header__button">
+       <button class="header__open-menu" data-menu-open>
         <svg class="header__icon-menu">
           <use href="./img/symboldefts.svg/icon.svg#icon-menu"></use>
         </svg>
        </button>
-       <!-- <div class="menu__modile">
-        <nav class="menu__navigation">
-          <ul class="menu__navigation-list">
-            <li class="menu__navigation-item">
-              <a href="./index.html" class="menu__navigation-link">Студія</a>
-            </li>
-            <li class="menu__navigation-item">
-              <a href="./portfolio.html" class="menu__navigation-link">Портфоліо</a>
-            </li>
-            <li class="menu__navigation-item">
-              <a href="" class="menu__navigation-link">Контакти</a>
-            </li>
-          </ul>
-          <ul class="menu__contacts-list">
-            <li class="menu__contacts-item">
-             <a href="tel:+38 096 111 11 11" class="menu__contacts-tel">+38 096 111 11 11</a>
-            </li>
-            <li class="menu__contacts-item">
-             <a href="mailto:info@devstudio.com" class="menu__contacts-mailto">info@devstudio.com</a>
-            </li>
-          </ul>
-          <ul class="menu__networks-list">
-            <li class="menu__networks-item">
-              <a href="https://www.instagram.com" class="menu__networks-link">Instagram</a>
-            </li>
-            <li class="menu__networks-item">
-              <a href="https://www.twitter.com" class="menu__networks-link">Twitter</a>
-            </li>
-            <li class="menu__networks-item">
-              <a href="https://www.facebook.com" class="menu__networks-link">Facebook</a>
-            </li>
-            <li class="menu__networks-item">
-              <a href="https://www.linkedin.com" class="menu__networks-link">Linkedin</a>
-            </li>
-          </ul>
-        </nav>
-       </div> -->
+       <div class="header__menu-box is-hidden" data-menu>
+        <div class="header__section">
+          <nav class="menu__navigation">
+            <button data-menu-close class="header__close-menu">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul class="header__menu-navigation-list">
+              <li class="header__menu-navigation-item">
+                <a href="./index.html" class="header__menu-navigation-link">Студія</a>
+              </li>
+              <li class="header__menu-navigation-item">
+                <a href="./portfolio.html" class="header__menu-navigation-link">Портфоліо</a>
+              </li>
+              <li class="header__menu-navigation-item">
+                <a href="" class="header__menu-navigation-link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="header__menu-contacts-list">
+              <li class="header__contacts-item">
+               <a href="tel:+38 096 111 11 11" class="header__menu-contacts-tel">+38 096 111 11 11</a>
+              </li>
+              <li class="header__contacts-item">
+               <a href="mailto:info@devstudio.com" class="header__menu-contacts-mailto">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="header__menu-networks-list">
+              <li class="header__networks-item">
+                <a href="https://www.instagram.com" class="header__menu-networks-link">Instagram</a>
+              </li>
+              <li class="header__menu-networks-item">
+                <a href="https://www.twitter.com" class="header__menu-networks-link">Twitter</a>
+              </li>
+              <li class="header__menu-networks-item">
+                <a href="https://www.facebook.com" class="header__menu-networks-link">Facebook</a>
+              </li>
+              <li class="header__menu-networks-item">
+                <a href="https://www.linkedin.com" class="header__menu-networks-link">Linkedin</a>
+              </li>
+            </ul>
+          </nav>
+  
+      </div>
       </div>
     </header>
 
@@ -448,6 +466,8 @@
     <script>
       AOS.init();
     </script>
+        <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+
   </body>
 </html>
