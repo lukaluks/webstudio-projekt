@@ -181,7 +181,6 @@ input {
   }
 }
 .header__items {
-  align-items: center;
   transition-property: fill;
 }
 .header__items:hover .header__email {
@@ -279,6 +278,7 @@ input {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    display: none;
   }
 }
 .header__section {
@@ -296,6 +296,11 @@ input {
   padding-right: 15px;
   padding-left: 40px;
   padding-bottom: 48px;
+}
+@media screen and (min-width: 1200px) {
+  .header__section {
+    display: none;
+  }
 }
 .header__close-menu {
   display: flex;
@@ -324,19 +329,19 @@ input {
   gap: 32px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 302px;
+  margin-bottom: 306px;
 }
-.header__menu-navigation-list__menu-contacts-list {
+.header__menu-contacts-list {
   gap: 32px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 320px) {
-  .header__menu-navigation-list__menu-contacts-list {
+  .header__menu-contacts-list {
     margin-bottom: 50px;
   }
 }
-.header__menu-navigation-list__menu-contacts-tel {
+.header__menu-contacts-tel {
   color: green;
   font-family: Roboto;
   font-style: normal;
@@ -345,16 +350,16 @@ input {
   letter-spacing: 0.68px;
 }
 @media screen and (min-width: 320px) {
-  .header__menu-navigation-list__menu-contacts-tel {
+  .header__menu-contacts-tel {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 480px) {
-  .header__menu-navigation-list__menu-contacts-tel {
+  .header__menu-contacts-tel {
     font-size: 34px;
   }
 }
-.header__menu-navigation-list__menu-contacts-mailto {
+.header__menu-contacts-mailto {
   color: #757575;
   font-family: Roboto;
   font-size: 24px;
@@ -363,11 +368,11 @@ input {
   line-height: normal;
   letter-spacing: 0.48px;
 }
-.header__menu-navigation-list__menu-networks-list {
+.header__menu-networks-list {
   display: flex;
   gap: 20px;
 }
-.header__menu-navigation-list__menu-networks-link {
+.header__menu-networks-link {
   color: green;
   position: relative;
   font-family: Roboto;
@@ -377,12 +382,12 @@ input {
   letter-spacing: 0.36px;
 }
 @media screen and (min-width: 320px) {
-  .header__menu-navigation-list__menu-networks-link {
+  .header__menu-networks-link {
     font-size: 11px;
   }
 }
 @media screen and (min-width: 480px) {
-  .header__menu-navigation-list__menu-networks-link {
+  .header__menu-networks-link {
     font-size: 18px;
   }
 }
