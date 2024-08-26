@@ -60,7 +60,9 @@
           <nav class="header__menu-navigation">
             <button data-menu-close class="header__close-menu">
               <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
               </svg>
             </button>
             <div class="header__box-menu">
@@ -183,7 +185,12 @@
       <h2 class="employees__title">Наша команда</h2>
       <ul class="employees__list">
         <li class="employees__item" data-aos="zoom-in-up">
-          <img src="./img/employees.jpg" class="employees__img" alt="employees" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/mobile/employees-img-mobile1x.webp 1x, ./img/mobile/employees-img-mobile2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/tablet/eployees-img-tablet1x.webp 1x, ./img/tablet/employees-tablet2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/desktop/employees-img-desktop1x.webp 1x, ./img/desktop/employees-img-desktop2x.webp 2x">
+            <img src="./img/employees.jpg" class="employees__img" alt="employees" />
+          </picture>
           <h3 class="employees__text">Ігор Дем'яненко</h3>
           <p class="employees__description">Product Designer</p>
           <ul class="employees__svg-list">
@@ -210,7 +217,12 @@
           </ul>
         </li>
         <li class="employees__item" data-aos="zoom-in-up">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/mobile/employees-olga-mobile1x.webp 1x, ./img/mobile/employees-olga-mobile2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/tablet/employees-olga-tablet1x.webp 1x, ./img/tablet/employees-olga-tablet2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/desktop/employees-olga-desktop1x.webp 1x, ./img/desktop/employees-olga-desktop2x.webp 2x">
           <img src="./img/employees3.jpg" class="employees-img" alt="employees3" />
+        </picture>
           <h3 class="employees__text">Ольга Рєпіна</h3>
           <p class="employees__description">Frontend Developer</p>
           <ul class="employees__svg-list">
@@ -237,7 +249,12 @@
           </ul>
         </li>
         <li class="employees__item" data-aos="zoom-in-up">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/mobile/employees-mukola-mobile1x.webp 1x, ./img/mobile/employees-mukola-mobile2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/tablet/employees-mukola-tablet1x.webp 1x, ./img/tablet/employees-mukola-tablet2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/desktop/employees-mukola-desktop1x.webp 1x, ./img/desktop/employees-mukola-desktop2x.webp 2x">
           <img src="./img/employees2.jpg" class="employees-img" alt="employees2" />
+        </picture>
           <h3 class="employees__text">Микола Тарасов</h3>
           <p class="employees__description">Marketing</p>
           <ul class="employees__svg-list">
@@ -264,7 +281,12 @@
           </ul>
         </li>
         <li class="employees__item" data-aos="zoom-in-up">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/mobile/employees-ermakov-mobile1x.webp 1x, ./img/mobile/employees-ermakov-mobile2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/tablet/employees-ermakov-tablet-1x.webp 1x, ./img/tablet/employees-ermakov-tablet-2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/desktop/employees-ermakov-desktop1x.webp 1x. ./img/desktop/employees-ermakov-desktop2x.webp 2x">
           <img src="./img/imemployees4.jpg" class="employees-img" alt="employees4" />
+        </picture>
           <h3 class="employees__text">Михайло Єрмаков</h3>
           <p class="employees__description">UI Designer</p>
           <ul class="employees__svg-list">
