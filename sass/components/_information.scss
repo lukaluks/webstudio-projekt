@@ -1,20 +1,56 @@
 .information {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40),  rgba(47, 48, 58, 0.40)) ,url(../img/Img.png);
-    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/mobile/background-mobile1x.webp), url(../img/Img.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/mobile/background-mobile2x.webp), url(../img/Img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-width: 767px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/tablet/background-tablet1x.webp), url(../img/Img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/tablet/background-tablet2x.webp), url(../img/Img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+ @media screen and (min-width: 1200px) {
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.40),  rgba(47, 48, 58, 0.40)), url(../img/desktop/background-desktop1x.webp), url(../img/Img.png);
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:  linear-gradient(rgba(47, 48, 58, 0.40),  rgba(47, 48, 58, 0.40)), url(../img/desktop/background-desktop2x.webp), url(../img/Img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
     font-size: 44px;
     margin-left: auto;
     margin-right: auto;
-   max-width: 1600px;
-   padding-top: 118px;
+    max-width: 1600px;
+    padding-top: 118px;
     padding-bottom: 118px;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-   
-
-  
 
     &__title {
         margin-left: auto;
@@ -26,52 +62,50 @@
         line-height: 161.538%;
         letter-spacing: 1.56px;
         text-transform: uppercase;
-    
+
         margin-bottom: 30px;
 
         @media screen and (min-width: 768px) {
             width: 360px;
         }
 
-       @media screen  and (min-width: 1200px){
-        line-height: 136.364%;
-        letter-spacing: 2.64px;
-        font-size: 44px;
-        width: 696px;
-       }
+        @media screen and (min-width: 1200px) {
+            line-height: 136.364%;
+            letter-spacing: 2.64px;
+            font-size: 44px;
+            width: 696px;
+        }
     }
 
-    
 
 
-&__button {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 4px;
-    background: $text-colors;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
-    font-weight: 700;
-    line-height:  187.5%;
-    letter-spacing: 0.96px;
-    color: $adress-color;
-    font-size: 16px;
-    padding-left: 24px;
-    padding-right: 24px;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    
 
-    @media screen and (min-width: 1200px) {
-        padding-left: 32px;
-        padding-right: 32px;
+    &__button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 4px;
+        background: $text-colors;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 187.5%;
+        letter-spacing: 0.96px;
+        color: $adress-color;
+        font-size: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
     }
-}
 
 
 }
-
-
